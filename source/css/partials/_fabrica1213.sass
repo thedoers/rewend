@@ -1,0 +1,721 @@
+.fago
+  font-family: Fago , "Helvetica neue", Helvetica, Arial, sans-serif
+
+#fabrica
+  +span-columns(10,10)
+  margin-bottom: 22px
+  color: $fa-white
+  @extend .fago
+
+  header
+    +span-columns(10,10)
+    position: relative
+    a
+      text-decoration: none
+      color: $fa-white
+    h2.fabrica-title, h3.subtitle, .subtitle-paragraph span.paragraph
+      background: $fa-black
+      +box-shadow($fa-white 1px 1px 0px)
+
+    .image-container
+      //+span-columns(10,10)
+      position: relative
+      margin-left: -($grid-padding)
+      margin-right: -($grid-padding)
+
+      .videoBG
+        width: span-columns(10,10)
+        height: 430px!important
+
+    h2.fabrica-title
+      position: absolute
+      height: 21px
+      width: 182px
+      top: 46px
+      margin: 0
+      z-index: 10
+      +replace-text("fabrica/fabrica_logo.png")
+
+    h3.subtitle
+      position: absolute
+      height: 20px
+      width: 66px
+      top: 71px
+      margin: 0px
+      text-align: center
+      @extend .fago
+      font-weight: 600
+      font-size: px-to-em(19px,16px)
+      padding: 0px
+
+    .subtitle-paragraph
+      position: absolute
+      top: 99px
+
+      span.paragraph
+        background: $fa-black
+        float: left
+        clear: both
+        font-size: px-to-em(15px,16px)
+        padding: 2px 8px
+        margin-top: 2px
+
+        span.big-symbol
+          font-size: px-to-em(21px, 16px)
+        span.big-number
+          font-size: px-to-em(34px, 16px)
+        span.big-symbol, span.big-number
+          @extend .fago
+          font-weight: 600
+
+  section.container
+
+    +span-columns(9,10)
+    +pre(1,10)
+    position: relative
+    margin-top: -127px
+    margin-bottom: 26px
+    font-size: px-to-em(14px, 16px)
+    p.base
+      margin: 0px auto
+      padding-left: 9px
+      padding-right: 6px
+    p.first
+      padding-top: 30px
+      padding-bottom: 21px
+      +background-image(linear-gradient(rgba(0, 0, 0, 0.4) 25%,rgba(0,0,0, 0.8) 42%, #000))
+      //background: $fa-black
+      a
+        text-decoration: none
+        color: white
+        border-bottom: 1px solid white
+      span.white-bk
+        padding: 3px
+        color: $fa-black
+        background: $fa-white
+      span.white-bk, span.bold
+        @extend .fago
+        font-weight: 600
+      span.regular, span.bold
+        display: block
+    //todo mancano le righe
+    p.underline
+      padding-top: 0px
+      padding-bottom: 0px
+      background: $fa-white
+      color: $fa-black
+      @extend .fago
+      font-weight: 600
+    p.last
+      padding-top: 22px
+      padding-bottom: 15px
+      background: $fa-black
+
+  section.register
+    +span-columns(9,10)
+    +pre(1,10)
+    margin-bottom: 27px
+    form
+      width: span-columns(9,9)
+      input
+        border: 3px inset $fa-black
+        padding: 0
+        margin: 0
+        text-align: left
+        text-indent: 10px
+        +border-radius(0px)
+        +box-sizing(border-box)
+
+      fieldset
+        border: none
+        margin: 0
+        padding: 0
+        p
+          margin: 0
+          padding: 0
+
+      .email, .name
+        +span-columns(8,9)
+        height: 46px
+        //width: 93%
+        margin-bottom: 16px
+        font-size: px-to-em(13px, 16px)
+        +nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+
+      .send
+        +span-columns(7,9)
+        height: 30px
+        //width: 84%
+        background: $fa-black
+        border: none
+        text-decoration: none
+        +box-shadow($fa-grey 4px -4px 0px)
+        @extend .fago
+        font-weight: 600
+        font-size: px-to-em(12px, 16px)
+        color: $fa-white
+        +nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+      .status
+        display: inline-block
+  footer
+    +span-columns(9,10)
+    +pre(1,10)
+    height: 68px
+    background: $fa-black
+
+    p
+      //background: $fa-black
+      //margin: 16px 0px 0px
+      //font-size: px-to-em(10.34px, 16px)
+      display: none
+
+    .share
+      margin: 22px 0 0 0
+      text-align: center
+      a
+        cursor: pointer
+        border: none
+        text-decoration: none
+        width: 34px
+        height: 34px
+        display: inline-block
+        text-align: center
+        font-size: px-to-em(20px,16px)
+        line-height: px-to-em(22px,16px)
+        +link-colors($wp-white, $wp-blue, $wp-blue, $wp-white, $wp-white)
+
++at-breakpoint($screen2 $break2)
+  #fabrica
+    +span-columns(12,12)
+    margin-bottom: 22px
+    header
+      .image-container
+        position: relative
+        .videoBG
+          width: span-columns(12,12)
+          height: 528px!important
+
+      h3.subtitle
+        text-transform: lowercase
+        font-size: px-to-em(18.13px, 16px)
+
+      .subtitle-paragraph
+        span.paragraph
+          font-size: px-to-em(17.1px, 16px)
+          span.big-symbol
+            font-size: px-to-em(23.93px, 16px)
+          span.big-number
+            font-size: px-to-em(38.75px, 16px)
+
+    section.container
+      +span-columns(9, 12)
+      +pre(0)
+      position: relative
+      margin-top: -239px
+
+
+      p.first
+        padding-botton: 15px
+        background: none
+        +background-image(linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4) 50%,#000))
+        a
+          text-decoration: none
+          color: white
+          border-bottom: 1px solid white
+        span.white-bk
+          display: block
+        span.bold
+          font-weight: 600
+          padding: 3px
+          color: $fa-black
+          background: $fa-white
+
+      p.underline
+        text-transform: uppercase
+        color: $fa-white
+        background: $fa-black
+        font-size: px-to-em(15px, 16px)
+
+    section.register
+      +span-columns(9,12)
+      +pre(0)
+      margin-left: 0
+      margin-right: 0
+      padding-left: 0
+      paddin-right: 0
+      form
+        +span-columns(9,9)
+
+        input
+          +border-radius(0px)
+          +box-sizing(border-box)
+        fieldset
+          border: none
+          margin: 0
+          padding: 0
+          p
+            margin: 0
+            padding: 0
+
+        .email, .name
+          +span-columns(8,9)
+          font-size: px-to-em(13.78px, 16px)
+          +nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+
+        .send
+          +span-columns(7,9)
+          margin-top: 7px
+          text-indent: 0
+          text-align: center
+          font-size: px-to-em(12.78px, 16px)
+          +nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+
+    footer
+      +span-columns(9,12)
+      +pre(0)
+      height: 50px
+
+      .share
+        float: right
+        margin: 14px 0 0 0
+        +suffix(1,9)
+
+
++at-breakpoint($screen3 $break3)
+  #fabrica
+    +span-columns(10,20)
+    margin-bottom: 22px
+    color: $fa-white
+    @extend .fago
+
+    header
+      .image-container
+        position: relative
+        margin-left: 0
+        margin-right: 0
+
+        .videoBG
+          width: span-columns(12,12)
+          height: 430px!important
+
+      h2.fabrica-title, h3.subtitle, .subtitle-paragraph span.paragraph
+        background: $fa-black
+        +box-shadow($fa-white 1px 1px 0px)
+
+
+      h2.fabrica-title
+        position: absolute
+        height: 21px
+        width: 182px
+        top: 46px
+        margin: 0
+        z-index: 10
+        +replace-text("fabrica/fabrica_logo.png")
+
+      h3.subtitle
+        position: absolute
+        height: 20px
+        width: 66px
+        top: 71px
+        margin: 0px
+        text-align: center
+        @extend .fago
+        font-weight: 600
+        font-size: px-to-em(19px,16px)
+        padding: 0px
+
+      .subtitle-paragraph
+        position: absolute
+        top: 99px
+
+        span.paragraph
+          background: $fa-black
+          float: left
+          clear: both
+          font-size: px-to-em(15px,16px)
+          padding: 2px 8px
+          margin-top: 2px
+
+          span.big-symbol
+            font-size: px-to-em(21px, 16px)
+          span.big-number
+            font-size: px-to-em(34px, 16px)
+          span.big-symbol, span.big-number
+            @extend .fago
+            font-weight: 600
+
+    section.container
+      +span-columns(8,10)
+      +pre(1,10)
+      position: relative
+      margin-top: -127px
+      margin-bottom: 26px
+      font-size: px-to-em(14px, 16px)
+      p.base
+        //background: $fa-black
+        margin: 0px auto
+        padding-left: 9px
+        padding-right: 6px
+      p.first
+        padding-top: 30px
+        padding-bottom: 21px
+        +background-image(linear-gradient(rgba(0, 0, 0, 0.4) 25%,rgba(0,0,0, 0.8) 42%, #000))
+
+        a
+          text-decoration: none
+          color: white
+          border-bottom: 1px solid white
+        span.white-bk
+          padding: 3px
+          color: $fa-black
+          background: $fa-white
+        span.white-bk, span.bold
+          @extend .fago
+          font-weight: 600
+        span.regular, span.bold
+          display: block
+
+      p.underline
+        padding-top: 0px
+        padding-bottom: 0px
+        background: $fa-white
+        color: $fa-black
+        @extend .fago
+        font-weight: 600
+      p.last
+        padding-top: 22px
+        padding-bottom: 15px
+        background: $fa-black
+
+    section.register
+      +span-columns(8,10)
+      +pre(1,10)
+      margin-bottom: 27px
+      form
+        width: span-columns(8,8)
+        input
+          border: 3px inset $fa-black
+          padding: 0
+          margin: 0
+          text-align: left
+          text-indent: 10px
+          +border-radius(0px)
+          +box-sizing(border-box)
+
+        fieldset
+          border: none
+          margin: 0
+          padding: 0
+          p
+            margin: 0
+            padding: 0
+
+        .email, .name
+          +span-columns(8,8)
+          //width: 93%
+          margin-bottom: 16px
+          font-size: px-to-em(13px, 16px)
+          +nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+
+        .send
+          +span-columns(7,9)
+          background: $fa-black
+          border: none
+          text-decoration: none
+          +box-shadow($fa-grey 4px -4px 0px)
+          @extend .fago
+          font-weight: 600
+          font-size: px-to-em(12px, 16px)
+          color: $fa-white
+          +nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+
+    footer
+      +span-columns(8,10)
+      +pre(1,10)
+      height: 68px
+
+      .share
+        float: none
+        margin: 22px 0 0 0
+        +suffix(0)
+
+
++at-breakpoint($screen4 $break4)
+  #fabrica
+    +span-columns(12 ,24)
+    margin-bottom: 22px
+    header
+      .image-container
+        position: relative
+        .videoBG
+          width: span-columns(12,12)
+          height: 528px!important
+
+      h2.fabrica-title
+        +pre(1,12)
+        +replace-text("fabrica/fabrica_logo.png")
+      h3.subtitle
+        +pre(1,12)
+        text-transform: lowercase
+        font-size: px-to-em(18.13px, 16px)
+
+      .subtitle-paragraph
+        +pre(1,12)
+        span.paragraph
+          font-size: px-to-em(17.1px, 16px)
+          span.big-symbol
+            font-size: px-to-em(23.93px, 16px)
+          span.big-number
+            font-size: px-to-em(38.75px, 16px)
+
+    section.container
+      +span-columns(9,12)
+      +pre(1,12)
+      position: relative
+      margin-top: -239px
+
+      p.first
+        padding-botton: 15px
+        background: none
+        +background-image(linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4) 50%,#000))
+        a
+          text-decoration: none
+          color: white
+          border-bottom: 1px solid white
+
+        span.white-bk
+          display: block
+        span.bold
+          font-weight: 600
+          padding: 3px
+          color: $fa-black
+          background: $fa-white
+
+      p.underline
+        text-transform: uppercase
+        color: $fa-white
+        background: $fa-black
+        font-size: px-to-em(15px, 16px)
+
+    section.register
+      +span-columns(9,12)
+      +pre(1,12)
+
+      form
+        input
+          +border-radius(0px)
+          +box-sizing(border-box)
+        fieldset
+          border: none
+          margin: 0
+          padding: 0
+          p
+            margin: 0
+            padding: 0
+
+        .email, .name
+          +span-columns(8,9)
+          font-size: px-to-em(13.78px, 16px)
+          +nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+
+        .send
+          +span-columns(7,9)
+          margin-top: 7px
+          text-indent: 0
+          text-align: center
+          font-size: px-to-em(12.78px, 16px)
+          +nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+
+    footer
+      +span-columns(9,12)
+      +pre(1,12)
+      height: 50px
+
+      .share
+        float: right
+        margin: 14px 0 0 0
+        +suffix(1,9)
+
+
++at-breakpoint($screen5 $break5)
+  #fabrica
+    +span-columns(12,36)
+    margin-bottom: 22px
+    color: $fa-white
+    @extend .fago
+
+    header
+      +span-columns(12,12)
+      position: relative
+
+      .image-container
+        position: relative
+        margin-left: 0
+        margin-right: 0
+
+        .videoBG
+          width: span-columns(12,12)
+          height: 430px!important
+
+      h2.fabrica-title, h3.subtitle, .subtitle-paragraph span.paragraph
+        background: $fa-black
+        +box-shadow($fa-white 1px 1px 0px)
+
+      h2.fabrica-title
+        +pre(1,12)
+        position: absolute
+        height: 21px
+        width: 182px
+        top: 46px
+        //margin: 0
+        z-index: 10
+        +replace-text("fabrica/fabrica_logo.png")
+
+      h3.subtitle
+        +pre(1,12)
+        position: absolute
+        height: 20px
+        width: 66px
+        top: 71px
+        //margin: 0px
+        text-align: center
+        @extend .fago
+        font-weight: 600
+        font-size: px-to-em(19px,16px)
+        padding: 0px
+
+      .subtitle-paragraph
+        position: absolute
+        top: 99px
+
+        span.paragraph
+          background: $fa-black
+          float: left
+          clear: both
+          font-size: px-to-em(15px,16px)
+          padding: 2px 8px
+          margin-top: 2px
+
+          span.big-symbol
+            font-size: px-to-em(21px, 16px)
+          span.big-number
+            font-size: px-to-em(34px, 16px)
+          span.big-symbol, span.big-number
+            @extend .fago
+            font-weight: 600
+
+    section.container
+      +span-columns(9,12)
+      +pre(2,12)
+      position: relative
+      margin-top: -127px
+      margin-bottom: 26px
+      font-size: px-to-em(14px, 16px)
+      p.base
+        margin: 0px auto
+        padding-left: 9px
+        padding-right: 6px
+      p.first
+        padding-top: 30px
+        padding-bottom: 21px
+        +background-image(linear-gradient(rgba(0, 0, 0, 0.4) 25%,rgba(0,0,0, 0.8) 42%, #000))
+        a
+          text-decoration: none
+          color: white
+          border-bottom: 1px solid white
+        span.white-bk
+          padding: 3px
+          color: $fa-black
+          background: $fa-white
+        span.white-bk, span.bold
+          @extend .fago
+          font-weight: 600
+        span.regular, span.bold
+          display: block
+
+      p.underline
+        padding-top: 0px
+        padding-bottom: 0px
+        background: $fa-white
+        color: $fa-black
+        @extend .fago
+        font-weight: 600
+      p.last
+        padding-top: 22px
+        padding-bottom: 15px
+        background: $fa-black
+
+    section.register
+      +span-columns(9,12)
+      +pre(2,12)
+      margin-bottom: 27px
+      form
+        width: span-columns(9,9)
+        input
+          border: 3px inset $fa-black
+          padding: 0
+          margin: 0
+          text-align: left
+          text-indent: 10px
+          +border-radius(0px)
+          +box-sizing(border-box)
+
+        fieldset
+          border: none
+          margin: 0
+          padding: 0
+          p
+            margin: 0
+            padding: 0
+
+        .email, .name
+          +span-columns(8,9)
+          margin-bottom: 16px
+          font-size: px-to-em(13px, 16px)
+          +nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+
+        .send
+          +span-columns(7,9)
+          background: $fa-black
+          border: none
+          text-decoration: none
+          +box-shadow($fa-grey 4px -4px 0px)
+          @extend .fago
+          font-weight: 600
+          font-size: px-to-em(12px, 16px)
+          color: $fa-white
+          +nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+
+    footer
+      +span-columns(9,12)
+      +pre(2,12)
+      height: 68px
+
+
+      .share
+        float: none
+        margin: 22px 0 0 0
+        +suffix(0)
+
+
+
