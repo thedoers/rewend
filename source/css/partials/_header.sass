@@ -18,10 +18,13 @@
       display: block
 
   .bg-header-bar
+    +span-columns(10,10)
     height: 40px
+    position: absolute
+    top: 0
     background: $orange
     opacity: 0.4
-    +stretch(0,-($grid-padding),0,-($grid-padding))
+
 
   .header_bar
     +span-columns(10,10)
@@ -31,7 +34,9 @@
     display: block
 
     .lenguages
-      +span-columns(4,10)
+      +span-columns(2,10)
+      +pre(1)
+
       p
         margin: 10px 0 0 0
         @extend .geogrotesque
@@ -45,8 +50,9 @@
 
     //todo manca font o immagine dello share
     .share
-      +span-columns(6 omega,10)
-      margin: 3px 0 0 0
+      +span-columns(5 omega,10)
+      +post(1)
+      margin-top: 5px
       .addthis_toolbox
         float: right
       a
@@ -59,6 +65,7 @@
         text-align: center
         font-size: px-to-em(24px,16px)
         line-height: px-to-em(22px,16px)
+        +link-colors($white, $white, $white, $white, $white)
 
 
 //480px horizontal layout
