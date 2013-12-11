@@ -1,25 +1,19 @@
-//todo cambiare header
 -# coding: utf-8
 #header
-  .front
-    .padder
-      .background
-      .logo
-        %a{href: 'http://www.thedoers.co/'}
-          The Doers
-      #mission
-        %h1
-          <span>U</span>SER  <span>E</span>XPERIENCE DESIGN<br />
-          <span>P</span>RODUCT  <span>D</span>EVELOPMENT<br />
-          <span>L</span>EAN APPROACH
-      =partial "partials/share_tag", :locals => {:url => "http://thedoers.co",:twitter_url=>"http://thedoers.co/?utm_source=tweet&utm_medium=twitter&utm_content=12-12&utm_campaign=website", :twitter_title => "They are Doers #ux #ixd #lean ", :title => "The Doers - User Experience, Interaction Design, Lean Product Development"}
+  .image-container
+    = image_tag 'rewend_bg-mobile-header.png', id:'rewend_bg-header', alt:'Rewend'
 
-      %ul.menu-container
-        %li
-          %a{href: 'http://blog.thedoers.co'}
-            <span>b</span>log
-        %li
-          %a{href: '/team.html'}
-            <span>t</span>eam
-      %p.scroll
-        SCROLL TO EXPLORE
+  .bg-header-bar
+
+  .header_bar
+    -#%ul.lenguages
+    -#  %li
+    -#    <a href="">ITA</a>&nbsp;|
+    -#  %li
+    -#    <a href="">ENG</a>
+
+    .lenguages
+      %p
+        <a href="">ITA</a> | <a href="">ENG</a>
+    =partial "partials/share_tag", :locals => {:url => "",:twitter_url=>"", :twitter_title => "", :title => ""}
+

@@ -1,0 +1,20 @@
+%section.register
+  %p.comment
+    <span class= "key-words">Rewend </span> significa nomade in curdo: è con spirito nomade e sguardo attento che nasce questa nostra iniziativa. Racconteremo, in una collana di libri cartacei e digitali, città e territori non ovvi, suggerendo percorsi, sguardi, assaggi. Da mettere nello zaino, da guardare prima di partire.
+  - form_tag 'http://mailinglist.thedoersproject.com/subscribe', :id => "signup-form-wp1213", :name => "signup-form", :"accept-charset" => "utf-8", :class => 'submit-form', :method => 'POST' do
+    - field_set_tag do
+      %p
+        = text_field_tag :name, :name => "name", :id => 'name', :class=>"name", :placeholder=>"Il tuo nome", :type=>"text"
+        = text_field_tag :email, :name => "email", :id => 'email', :class=>"email", :placeholder=>"La tua email", :type=>"text"
+      - if development?
+        = hidden_field_tag  :list, :value => "C1fJOvxS4d3nIt7BNFTFGQ", :name => "list", :id => 'submit_list'
+      - if build?
+        = hidden_field_tag  :list, :value => "KgDMXDrqaKxmv6NDzCziJQ", :name => "list", :id => 'submit_list'
+      = hidden_field_tag  :listall, :value => "f4B1RXA44QJWHwOkMzitlA", :name => "list all", :id => 'submit_listall'
+      = hidden_field_tag  :success, :value => "/workshops/2013/thank-you-workshop1213.html", :name => "success", :id => 'submit_success'
+      = hidden_field_tag  :element, :value => "#_wp1213_tk", :name => "element", :id => 'submit_element'
+      = hidden_field_tag  :language, :value => "it", :name => "language", :id => 'language'
+      = hidden_field_tag  :tags, :value => "workshop", :name => "tags", :id => 'tags'
+      %p
+        = submit_tag "Submit-", :name => "submit", :id => 'submit-btn-',:class=> "send", :value=>'ISCRIVITI!'
+      %p#status-wp1213.status
