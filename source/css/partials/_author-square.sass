@@ -6,8 +6,8 @@
     +span-columns(4,10)
     //+pre(1)
     margin: 0
-    p.career
-      margin: 0
+    h3.career
+      margin: 22px 0 0 0
       @extend .geogrotesque
       font-size: px-to-em(15px,16px)
       font-weight: 700
@@ -19,6 +19,16 @@
   .container-right
     +span-columns(4 omega,10)
     //+post(1)
+
+    h2.name
+      margin: 0
+      @extend .geogrotesque
+      font-size: px-to-em(30px,16px)
+      font-weight: 700
+      font-style: normal
+      color: $blue
+      line-height: 1em
+
     p.data
       margin: 0
       @extend .decimanova
@@ -28,12 +38,7 @@
       color: $blue
       line-height: 1.2em
 
-      span.name
-        @extend .geogrotesque
-        font-size: px-to-em(30px,16px)
-        font-weight: 700
-        font-style: normal
-        color: $blue
-        line-height: 1em
-      span.key-words
-        color: $dark-blue
+    span.key-words
+      color: $dark-blue
+
+

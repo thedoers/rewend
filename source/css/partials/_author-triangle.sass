@@ -1,0 +1,42 @@
+.author-triangle
+  +span-columns(10,10)
+  margin: 10px 0 0 0
+
+  .container-left
+    +span-columns(4,10)
+    //+pre(1)
+    margin: 0
+
+  .container-right
+    +span-columns(4 omega,10)
+    //+post(1)
+
+    h2.name
+      margin: 0
+      @extend .geogrotesque
+      font-size: px-to-em(15px,16px)
+      font-weight: 700
+      font-style: normal
+      color: $dark-blue
+      line-height: 1em
+
+    h3.career
+      margin: 22px 0 0 0
+      @extend .geogrotesque
+      font-size: px-to-em(12px,16px)
+      font-weight: 700
+      font-style: normal
+      color: $dark-blue
+      line-height: 1em
+
+    p.data
+      margin: 0
+      @extend .geogrotesque
+      font-size: px-to-em(10px,16px)
+      font-weight: 400
+      font-style: normal
+      color: $blue
+      line-height: 1.2em
+
+
+
