@@ -1,0 +1,65 @@
+.stores
+  +span-columns(10,10)
+  padding: 0 0 8px 0
+  border: 10px solid $pink
+  +box-sizing(border-box)
+
+  h2.title
+    margin: 0
+    padding: 10px 0 0 0
+    @extend .decimanova
+    font-weight: 700
+    font-style: italic
+    font-size: px-to-em(16px,16px)
+    color: $blue
+    line-height: 1em
+
+  .container-left
+    +span-columns(5,10)
+    .point
+      display: block
+      margin-top: 16px
+      .address
+        display: inline-table
+        margin-top: -8px
+
+        h3.store, p
+          @extend .decimanova
+          font-weight: 700
+          font-style: italic
+
+        h3.store_name
+          margin: 0
+          font-size: px-to-em(11px,16px)
+          color: $blue
+          line-height: 1em
+        p
+          margin: 0
+          font-size: px-to-em(10px,16px)
+          color: $blue
+          line-height: 1em
+
+  .container-right
+    +span-columns(5 omega,10)
+    .point
+      display: block
+      margin-top: 16px
+      .address
+        display: inline-table
+        margin-top: -8px
+
+        h3.store, p
+          @extend .decimanova
+          font-weight: 700
+          font-style: italic
+
+        h3.store_name
+          margin: 0
+          font-size: px-to-em(11px,16px)
+          color: $blue
+          line-height: 1em
+        p
+          margin: 0
+          font-size: px-to-em(10px,16px)
+          color: $blue
+          line-height: 1em

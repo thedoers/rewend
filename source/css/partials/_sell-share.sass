@@ -2,10 +2,11 @@
   +span-columns(10,10)
   position: relative
   border: 10px solid $blue
+  margin: 11px 0 0 0
   padding: 8px 0
   +box-sizing(border-box)
 
-  .container_devicesplus
+  .container-left
     +span-columns(6 ,10)
     //+post(1)
     position: relative
@@ -30,7 +31,7 @@
         font-style: italic
         color: $white
 
-  .paragraph-share
+  .container-right
     //+span-columns(4 omega ,10)
     //todo font si vede tagliato con font-size: 13px . Con 14px si vede bene
     p
@@ -39,6 +40,7 @@
       font-weight: 700
       font-style: italic
       color: $blue
+      line-height: 1.2em
       .key-words
         color: $dark-blue
 
