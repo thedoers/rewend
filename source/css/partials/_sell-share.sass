@@ -2,6 +2,7 @@
   +span-columns(10,10)
   position: relative
   border: 10px solid $blue
+  padding: 8px 0
   +box-sizing(border-box)
 
   .container_devicesplus
@@ -21,7 +22,8 @@
         +box-shadow($dark-blue 2px 2px 2px)
 
       #buy25, #buy10
-        padding: 12px
+        padding: 6px
+        display: inline-block
         @extend .decimanova
         font-size: px-to-em(11.26px,16px)
         font-weight: 700
@@ -30,7 +32,7 @@
 
   .paragraph-share
     //+span-columns(4 omega ,10)
-    //todo font si vede tagliato con font-size: 13px
+    //todo font si vede tagliato con font-size: 13px . Con 14px si vede bene
     p
       @extend .decimanova
       font-size: px-to-em(13px,16px)

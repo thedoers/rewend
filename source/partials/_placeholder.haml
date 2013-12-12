@@ -1,10 +1,10 @@
 %section.placeholder
   %figure
-    = image_tag '', id:'', alt:''
+    = image_tag 'prova.png', id:'', alt:'Istambul-picture'
+    .info
+      =partial "partials/share_tag", :locals => {:url => "",:twitter_url=>"", :twitter_title => "", :title => ""}
+      %p.name
+        Piazza <br> Ortaköy
   .messages
     %p
-      “Proprio questa è la nostra ambizione: farvi uscire dai circuiti - pur belli - obbligati. Pungolarvi a scoprire la città lasciandovi guidare dall’intuito, dagli odori, dai suoni.”
-  .info
-    =partial "partials/share_tag", :locals => {:url => "",:twitter_url=>"", :twitter_title => "", :title => ""}
-    %span.name
-      Piazza <br> Ortaköy
+      “Proprio questa è la nostra ambizione: <span class="key-words">farvi uscire</span> dai circuiti - pur belli - obbligati. Pungolarvi a scoprire la città lasciandovi guidare dall’intuito, dagli odori, dai suoni.”
