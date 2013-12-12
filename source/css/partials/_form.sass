@@ -62,16 +62,27 @@ section.register
       height: 30px
       width: 74px
       margin: 12px 0
+      padding: 2px 6px
       text-decoration: none
       background: $dark-blue
       border: none
       text-align: center
-      +box-shadow($orange 2px 2px 2px)
+      +box-shadow($orange 2px 2px 0px)
       @extend .decimanova
       font-size: px-to-em(11.26px,16px)
       font-weight: 700
       font-style: italic
       color: $white
+      &:hover
+        background: $pink
+        +box-shadow($dark-blue 2px 2px 0px)
+      &:active
+        padding: 0 4px
+        background: $dark-blue
+        border: $orange 2px solid
+        +box-shadow(none)
+        +box-sizing(content-box)
+
 
     //todo qual tipo di font per lo status
     p.status

@@ -15,15 +15,34 @@
       #buy25
         text-decoration: none
         background: $dark-blue
-        +box-shadow($orange 2px 2px 2px)
+        +box-shadow($orange 2px 2px 0px)
+        &:hover
+          background: $pink
+          +box-shadow($dark-blue 2px 2px 0px)
+        &:active
+          padding: 0.5px 4px
+          background: $dark-blue
+          border: $orange 2px solid
+          +box-shadow(none)
+          +box-sizing(border-box)
 
       #buy10
         text-decoration: none
         background: $orange
-        +box-shadow($dark-blue 2px 2px 2px)
+        +box-shadow($dark-blue 2px 2px 0px)
+        &:hover
+          background: $pink
+          +box-shadow($blue 2px 2px 0px)
+        &:active
+          padding: 0.5px 4px
+          background: $orange
+          border: $dark-blue 2px solid
+          +box-shadow(none)
+          +box-sizing(border-box)
 
       #buy25, #buy10
-        padding: 6px
+        margin: 0 0 0 5px
+        padding: 2.5px 6px
         display: inline-block
         @extend .decimanova
         font-size: px-to-em(11.26px,16px)
