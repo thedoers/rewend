@@ -1,0 +1,82 @@
+section.register
+  +span-columns(10,10)
+  margin: 12px 0 0 0
+  background: $blue
+
+  //h3
+  //  +span-columns(10,10)
+  //  margin: 0
+  //  margin-bottom: 16px
+  //  @extend
+  //  font-size:  px-to-em(,16px)
+  //  color: $wp-blue
+  //  line-height: 1em
+
+  p.comment
+    +pre(1)
+    +post(1)
+    margin-top: 10px
+    margin-bottom: 0
+    @extend .decimanova
+    font-size: px-to-em(13px,16px)
+    font-weight: 700
+    font-style: italic
+    color: $white
+    line-height: 1.2em
+    span.key-words
+      color: $dark-blue
+
+  form
+    +span-columns(8,10)
+    +pre(1)
+    +post(1)
+    input
+      +border-radius(0px)
+      +box-sizing(content-box)
+    fieldset
+      border: none
+      margin: 0
+      padding: 0
+      p
+        +span-columns(10,10)
+        margin: 0
+        padding: 0
+
+    .email, .name
+      height: 30px
+      margin: 12px 0 0 0
+      padding-left: 5px
+      border: 0
+      +border-radius(0)
+      //todo qual tipo di font per il placeholder delle input
+      //@extend .blender
+      //font-size: px-to-em(20px,16px)
+      //font-weight: 600
+      //text-indent: 1em
+      //+nowrap
+      //overflow: hidden
+      //text-overflow: ellipsis
+      //padding: 0
+    //todo stati hover, visited, ecc mancano
+    .send
+      height: 30px
+      width: 74px
+      margin: 12px 0
+      text-decoration: none
+      background: $dark-blue
+      border: none
+      text-align: center
+      +box-shadow($orange 2px 2px 2px)
+      @extend .decimanova
+      font-size: px-to-em(11.26px,16px)
+      font-weight: 700
+      font-style: italic
+      color: $white
+
+    //todo qual tipo di font per lo status
+    p.status
+      //margin-top: 20px
+      //@extend .decimanova
+      //font-size: px-to-em(20px,16px)
+      //font-weight: 600
+
