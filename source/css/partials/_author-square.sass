@@ -1,0 +1,31 @@
+.author-square
+  .container-left
+    +span-columns(4,10)
+    //+pre(1)
+
+    p.career
+      @extend .geogrotesque
+      font-size: px-to-em(15px,16px)
+      font-weight: 700
+      font-style: normal
+      color: $orange
+
+
+  .container-right
+    +span-columns(4 omega,10)
+    //+post(1)
+    p.data
+      @extend .decimanova
+      font-size: px-to-em(14px,16px)
+      font-weight: 700
+      font-style: italic
+      color: $blue
+
+      span.name
+        @extend .geogrotesque
+        font-size: px-to-em(30px,16px)
+        font-weight: 700
+        font-style: normal
+        color: $blue
+      span.key-words
+        color: $dark-blue

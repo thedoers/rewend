@@ -1,19 +1,19 @@
 .sell-share
   .container_devicesplus
     = image_tag 'rewend_buyplus-images.png', id:'devicesplus', alt:''
-    %span.price_one
-      25&#8364;
-    %span.price_two
-      10&#8364;
-  .buttons
-    %button{ type: "button", id: "buy25"}
-      LO VOGLIO!
-    %button{ type: "button", id: "buy10"}
-      LO VOGLIO!
+    -#%span.price_one
+    -#  25&#8364;
+    -#%span.price_two
+    -#  10&#8364;
+    .buttons
+      %a{href:"", id: "buy25"}
+        LO VOGLIO!
+      %a{ href:"", id: "buy10"}
+        LO VOGLIO!
   .paragraph-share
     %p
       “Questo libro è un po’ la nostra
-      dichiarazione d’amore a luoghi
+      <span class="key-words">dichiarazione d’amore</span> a luoghi
       che ci hanno accolto
       e continuano ad
       accoglierci.”

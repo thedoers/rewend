@@ -3,3 +3,32 @@
   position: relative
   border: 10px solid $pink
   +box-sizing(border-box)
+
+  .container_devices
+    +span-columns(4,10)
+    //+pre(1)
+  .container_devicesplus
+    +span-columns(6 omega,10)
+    //+post(1)
+    position: relative
+
+    .buttons
+      #buy25
+        text-decoration: none
+        background: $dark-blue
+        +box-shadow($orange 2px 2px 2px)
+
+      #buy10
+        text-decoration: none
+        background: $orange
+        +box-shadow($dark-blue 2px 2px 2px)
+
+      #buy25, #buy10
+        padding: 12px
+        @extend .decimanova
+        font-size: px-to-em(11.26px,16px)
+        font-weight: 700
+        font-style: italic
+        color: $white
+
+
