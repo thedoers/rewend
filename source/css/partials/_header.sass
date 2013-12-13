@@ -21,6 +21,20 @@ header
     background: $orange
     opacity: 0.4
 
+  .title
+    +span-columns(10,10)
+    height: 49px
+    position: absolute
+    bottom: 25%
+    left: columns(2)
+    h1
+      @extend .decimanova
+      font-size: px-to-em(65px,16px)
+      font-weight: 700
+      font-style: italic
+      color: $white
+
+
 
   .header_bar
     +span-columns(10,10)
