@@ -22,7 +22,6 @@ header
     opacity: 0.4
 
   .title
-    +span-columns(10,10)
     height: 49px
     position: absolute
     bottom: 25%
@@ -76,6 +75,9 @@ header
         font-size: px-to-em(20px,16px)
         line-height: px-to-em(22px,16px)
         +link-colors($white, $pink, $white, $white, $white)
+
+      a:nth-child(4)
+        display: none
 
 //480px horizontal layout
 +at-breakpoint($screen2 $break2)
