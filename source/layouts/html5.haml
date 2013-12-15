@@ -14,7 +14,6 @@
 
     <!-- Favicons and touch icons -->
     <!-- For retina-display iPads -->
-    // todo cambiare favicon
     %link{ :href=>"/apple-touch-icon-144x144-precomposed.png?v=1", :rel=>"apple-touch-icon-precomposed", :sizes=>"144x144", :type=>"image/png" }
     <!-- For retina-display iPhones -->
     %link{ :href=>"/apple-touch-icon-144x144-precomposed.png?v=1", :rel=>"apple-touch-icon-precomposed", :sizes=>"114x114", :type=>"image/png" }
@@ -30,6 +29,9 @@
 
     = javascript_include_tag "vendor/modernizr.js"
     = stylesheet_link_tag "application"
+    -if development?
+      = stylesheet_link_tag "development/draw_grid"
+
   %body
     = partial'partials/tag-manager'
     #container

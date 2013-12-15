@@ -47,6 +47,7 @@ set :js_dir, 'js'
 set :images_dir, 'images'
 
 
+
 set :fonts_dir, 'fonts'
 
 activate :automatic_image_sizes
