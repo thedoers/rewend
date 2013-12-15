@@ -3,7 +3,7 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Piermaria Cosina -- CTO -- @piermaria
 
 # THANKS
 
