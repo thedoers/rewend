@@ -2,22 +2,13 @@ section.location
   +span-columns(10,10)
   position: relative
 
-  a.map
-    @extend .nodecoration
+  figure
     position: relative
-    +span-columns(10,10)
-    .overlay
-      z-index: 2
-      background-color: $blue
-      +opacity(0.2)
-
-    figure
+    overflow: hidden
+    img
       position: relative
-      overflow: hidden
-      img
-        position: relative
-        display: block
-        vertical-align: middle
-        width: 100%
-        height: auto
-        margin-bottom: -15%
+      display: block
+      vertical-align: middle
+      width: 100%
+      height: auto
+      margin-bottom: -15%
