@@ -27,28 +27,28 @@ $screen6a: 89.99em
 
 @import "partials/draw_grid"
 
-#container
+#container1, #container2
   +container($total-columns, $break1, $break2, $break3, $break4, $break5)
   -webkit-font-smoothing: antialiased
   -webkit-overflow-scrolling: touch
 
 +at-breakpoint($screen2 $break2 $screen3a)
-  #container
+  #container1, #container2
 +at-breakpoint($screen3 $break3 $screen4a)
-  #container
+  #container1, #container2
     >div
       +nth-omega(2n)
 +at-breakpoint($screen4 $break4 $screen5a)
-  #container
+  #container1, #container2
     >div
       +nth-omega(2n)
 +at-breakpoint($screen5 $break5 $screen6a)
-  #container
+  #container1, #container2
     >div
       +nth-omega(3n)
 
 +at-breakpoint($screen6 $break6)
-  #container
+  #container1, #container2
     >div
       +nth-omega(3n)
 
