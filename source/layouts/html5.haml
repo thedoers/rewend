@@ -32,9 +32,7 @@
     = stylesheet_link_tag "application"
   %body
     = partial'partials/tag-manager'
-    #container
-      = yield
-    //todo addthis
+    = yield
 
     %script{src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52ab343a2ff4bee8"}
     = javascript_include_tag "site.js"
