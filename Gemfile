@@ -18,5 +18,4 @@ gem 'mini_magick', :platforms => [:ruby]
 gem "middleman-cloudfront"
 gem 'middleman-s3_sync'
 
-
-
+gem 'foreman'
