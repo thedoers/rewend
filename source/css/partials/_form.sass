@@ -1,7 +1,10 @@
 section.register
   +span-columns(10,10)
-  margin: 12px 0 0 0
+  position: absolute
+  //margin: 12px 0 0 0
   background: $blue
+  opacity: 0.9
+  z-index: 10
 
   //h3
   //  +span-columns(10,10)
@@ -38,12 +41,13 @@ section.register
       margin: 0
       padding: 0
       p
-        +span-columns(10,10)
+        +span-columns(8,8)
         margin: 0
         padding: 0
 
     .email, .name
       height: 30px
+      +span-columns(5,8)
       margin: 12px 0 0 0
       padding-left: 5px
       border: 0
@@ -60,7 +64,8 @@ section.register
 
     .send
       height: 30px
-      width: 74px
+      //width: 74px
+      +span-columns(3,8)
       margin: 12px 0
       padding: 2px 6px
       text-decoration: none
