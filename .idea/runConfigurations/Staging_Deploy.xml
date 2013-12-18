@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Staging Build" type="CommandRunConfigurationType" factoryName="Gem Command" singleton="true">
+  <configuration default="false" name="Staging Deploy" type="CommandRunConfigurationType" factoryName="Gem Command" singleton="true">
     <module name="rewend" />
     <COMMAND_RUN_CONFIGURATION NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
     <COMMAND_RUN_CONFIGURATION NAME="WORK DIR" VALUE="$MODULE_DIR$" />
@@ -17,8 +17,8 @@
     <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
     <COMMAND_CONFIG_SETTINGS_ID NAME="GEM_NAME" VALUE="foreman" />
     <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_NAME" VALUE="foreman" />
-    <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_ARGS" VALUE="run -e environments/staging.env middleman build" />
-    <COMMAND_CONFIG_SETTINGS_ID NAME="WORKING_DIR" VALUE="run -e environments/staging.env middleman build" />
+    <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_ARGS" VALUE="run -e environments/staging.env middleman deploy" />
+    <COMMAND_CONFIG_SETTINGS_ID NAME="WORKING_DIR" VALUE="run -e environments/staging.env middleman deploy" />
     <RunnerSettings RunnerId="RubyRunner" />
     <ConfigurationWrapper RunnerId="RubyRunner" />
     <method />
