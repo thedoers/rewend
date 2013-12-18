@@ -14,55 +14,41 @@
     color: $blue
     line-height: 1em
 
+  .container-left,.container-right
+
+    #mobile-store-pin
+      display: inline-block
+    #desktop-store-pin
+      display: none
+
+    .point
+      display: block
+      margin-top: 16px
+      .address
+        display: inline-table
+        margin-top: -8px
+
+        a.store_name, p
+          @extend .decimanova
+          font-weight: 700
+          font-style: italic
+
+        a.store_name
+          margin: 0
+          font-size: px-to-em(11px,16px)
+          color: $orange
+          line-height: 1em
+        p
+          margin: 0
+          font-size: px-to-em(10px,16px)
+          color: $blue
+          line-height: 1em
+
   .container-left
     +span-columns(5,10)
-    .point
-      display: block
-      margin-top: 16px
-      .address
-        display: inline-table
-        margin-top: -8px
-
-        h3.store, p
-          @extend .decimanova
-          font-weight: 700
-          font-style: italic
-
-        h3.store_name
-          margin: 0
-          font-size: px-to-em(11px,16px)
-          color: $blue
-          line-height: 1em
-        p
-          margin: 0
-          font-size: px-to-em(10px,16px)
-          color: $blue
-          line-height: 1em
 
   .container-right
-    +span-columns(5 omega,10)
-    .point
-      display: block
-      margin-top: 16px
-      .address
-        display: inline-table
-        margin-top: -8px
-
-        h3.store, p
-          @extend .decimanova
-          font-weight: 700
-          font-style: italic
-
-        h3.store_name
-          margin: 0
-          font-size: px-to-em(11px,16px)
-          color: $blue
-          line-height: 1em
-        p
-          margin: 0
-          font-size: px-to-em(10px,16px)
-          color: $blue
-          line-height: 1em
+    +span-columns(5 omega ,10)
 
 +at-breakpoint($screen2 $break2)
   .stores
@@ -74,7 +60,7 @@
 +at-breakpoint($screen3 $break3)
   .stores
     +span-columns(16 ,16)
-    padding: 0 0 8px 0
+    padding: 20px 0 20px 0
     +prefix(1,16)
     border: 10px solid $pink
     +box-sizing(border-box)
@@ -85,56 +71,43 @@
       @extend .decimanova
       font-weight: 700
       font-style: italic
-      font-size: px-to-em(16px,16px)
+      font-size: px-to-em(25px,16px)
       color: $blue
       line-height: 1em
 
+    .container-left, .container-right
+
+      #mobile-store-pin
+        display: none
+      #desktop-store-pin
+        display: inline-block
+
+      .point
+        display: block
+        margin-top: 30px
+        .address
+          display: inline-table
+          margin-top: -20px
+          padding-left: 8px
+
+          a.store_name, p
+            @extend .decimanova
+            font-weight: 700
+            font-style: italic
+          a.store_name
+            margin: 0
+            font-size: px-to-em(20px,16px)
+            color: $orange
+            line-height: 1em
+          p
+            margin: 0
+            font-size: px-to-em(18px,16px)
+            color: $black
+            line-height: 1em
+
     .container-left
       +span-columns(7,15)
-      .point
-        display: block
-        margin-top: 16px
-        .address
-          display: inline-table
-          margin-top: -8px
-
-          h3.store, p
-            @extend .decimanova
-            font-weight: 700
-            font-style: italic
-
-          h3.store_name
-            margin: 0
-            font-size: px-to-em(11px,16px)
-            color: $blue
-            line-height: 1em
-          p
-            margin: 0
-            font-size: px-to-em(10px,16px)
-            color: $blue
-            line-height: 1em
 
     .container-right
-      +span-columns(7 omega,15)
-      .point
-        display: block
-        margin-top: 16px
-        .address
-          display: inline-table
-          margin-top: -8px
+      +span-columns(7 omega ,15)
 
-          h3.store, p
-            @extend .decimanova
-            font-weight: 700
-            font-style: italic
-
-          h3.store_name
-            margin: 0
-            font-size: px-to-em(11px,16px)
-            color: $blue
-            line-height: 1em
-          p
-            margin: 0
-            font-size: px-to-em(10px,16px)
-            color: $blue
-            line-height: 1em
