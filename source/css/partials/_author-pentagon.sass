@@ -6,8 +6,6 @@
     +span-columns(4,10)
     //+post(1)
 
-    h3.test
-
     h2.name
       margin: 0
       @extend .geogrotesque
@@ -40,4 +38,64 @@
     +span-columns(6 omega,10)
     //+pre(1)
     margin: 0
+
+    #mobile-author-ph_pentagon
+      display: block
+    #desktop-author-ph_pentagon
+      display: none
+
++at-breakpoint($screen2 $break2)
+  .author-pentagon
+    +span-columns(12 ,12)
+
+
+//640px vertical layout
+//960px horizontal layout
+//desktop
++at-breakpoint($screen3 $break3)
+  .author-pentagon
+    +span-columns(11 ,16)
+    margin: 10px 0 0 0
+
+    .container-left
+      +span-columns(5,11)
+      //+post(1)
+
+      h2.name
+        margin: 0
+        @extend .geogrotesque
+        font-size: px-to-em(24px,16px)
+        font-weight: 700
+        font-style: normal
+        color: $dark-blue
+        line-height: 1em
+
+      h3.career
+        margin: 22px 0 0 0
+        @extend .geogrotesque
+        font-size: px-to-em(21px,16px)
+        font-weight: 700
+        font-style: normal
+        color: $dark-blue
+        line-height: 1em
+
+      p.data
+        margin: 0
+        @extend .geogrotesque
+        font-size: px-to-em(15px,16px)
+        font-weight: 400
+        font-style: normal
+        color: $blue
+        line-height: 1.2em
+
+
+    .container-right
+      +span-columns(6 omega,11)
+      //+pre(1)
+      margin: 0
+
+      #mobile-author-ph_pentagon
+        display: none
+      #desktop-author-ph_pentagon
+        display: block
 
