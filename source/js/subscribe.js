@@ -52,7 +52,6 @@ function ajaxform_subscribe(formSubmit,status){
                         }
                         else
                         {
-                            //todo fixare colori feedback
                             $status.text("You're subscribed!");
                             $status.css("color", "green");
                             window.location.href = success_path;

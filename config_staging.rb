@@ -1,3 +1,4 @@
+
 activate :deploy do |deploy|
   deploy.method = :ftp
   deploy.host = "web332.webfaction.com"
@@ -6,8 +7,6 @@ activate :deploy do |deploy|
   deploy.path = "/home/piermaria/webapps/devrewend"
   deploy.build_before = true
 end
-
-
 
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                     = 's3.rewend.co' # The name of the S3 bucket you are targetting. This is globally unique.
@@ -57,24 +56,24 @@ activate :automatic_image_sizes
 configure :build do
   # For example, change the Compass output style for deployment
   activate :minify_css
-
+  
   # # Minify Javascript on build
   activate :minify_javascript
   activate :minify_html
   # # Create favicon/touch icon set from source/favicon_base.png
   activate :favicon_maker
-
+  
   # # Enable cache buster
   activate :cache_buster
   #activate :image_optim
-
+  
   # # Use relative URLs
   #activate :relative_assets
   # # To put width and height inside tag and to compression
 
   activate :gzip
   #activate :smusher
-
+  
   # Or use a different image path
   #set :http_path, "http://thedoers.co/"
 end

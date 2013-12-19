@@ -1,7 +1,7 @@
 $base-font-size: 16px
 $base-line-height: 16px
 $total-columns: 10
-$column-width: 1.875em
+$column-width: 2.5em
 $gutter-width: 0.625em
 $grid-padding: 0
 $container-style: magic
@@ -10,46 +10,22 @@ $border-box-sizing: true
 $break1: 10
 $break2: 12
 $break3: 16
-$break4: 16
-$break5: 16
-$break6: 16
+
 
 $screen1: 20em //320px
 $screen2: 30em //480px
 $screen3: 40em //640px
 $screen3a: 39.99em //640px
 $screen4: 60em //960px
-$screen4a: 59.99em //960px
-$screen5: 80em //1280px
-$screen5a: 79.99em
-$screen6: 90em
-$screen6a: 89.99em
+
 
 @import "partials/draw_grid"
 
-#container1, #container2, #container3, #container4
-  +container($total-columns, $break1, $break2, $break3, $break4, $break5)
+#container1, #container2
+  +container($total-columns, $break1, $break2, $break3)
   -webkit-font-smoothing: antialiased
   -webkit-overflow-scrolling: touch
 
-+at-breakpoint($screen2 $break2 $screen3a)
-  #container1, #container2, #container3, #container4
-+at-breakpoint($screen3 $break3 $screen4a)
-  #container1, #container2, #container3, #container4
-    >div
-      +nth-omega(2n)
-+at-breakpoint($screen4 $break4 $screen5a)
-  #container1, #container2, #container3, #container4
-    >div
-      +nth-omega(2n)
-+at-breakpoint($screen5 $break5 $screen6a)
-  #container1, #container2, #container3, #container4
-    >div
-      +nth-omega(3n)
 
-+at-breakpoint($screen6 $break6)
-  #container1, #container2, #container3, #container4
-    >div
-      +nth-omega(3n)
 
 

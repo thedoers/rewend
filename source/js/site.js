@@ -4,6 +4,7 @@
 //= require "vendor/jquery.fadeloader"
 //= require "vendor/jquery.scrollTo"
 //= require "passURL"
+//= require "vendor/jquery.slides"
 /**
  * Created with JetBrains RubyMine.
  * User: piermariacosina
@@ -14,7 +15,16 @@
 
 
 $(document).ready(function(){
-
+    $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        play: {
+            active: true,
+            auto: true,
+            interval: 4000,
+            swap: true
+        }
+    });
 
 
 });
