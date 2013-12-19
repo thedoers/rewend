@@ -1,9 +1,9 @@
 section.register
   +span-columns(10,10)
   position: absolute
-  //margin: 12px 0 0 0
+  padding: 10px 0 0 0
   background: $blue
-  opacity: 0.9
+  +opacity(0.9)
   z-index: 10
 
   //h3
@@ -18,7 +18,6 @@ section.register
   p.comment
     +pre(1)
     +post(1)
-    margin-top: 10px
     margin-bottom: 0
     @extend .decimanova
     font-size: px-to-em(14px,16px)
@@ -46,8 +45,9 @@ section.register
         padding: 0
 
     .email, .name
-      height: 30px
       +span-columns(5,8)
+      height: 30px
+      clear: both
       margin: 12px 0 0 0
       padding-left: 5px
       border: 0
@@ -63,9 +63,9 @@ section.register
       padding: 0
 
     .send
+      +span-columns(3,8)
       height: 30px
       //width: 74px
-      +span-columns(3,8)
       margin: 12px 0
       padding: 2px 6px
       text-decoration: none
@@ -79,7 +79,7 @@ section.register
       font-style: italic
       color: $white
       &:hover
-        background: $pink
+        background: $blue
         +box-shadow($dark-blue 2px 2px 0px)
       &:active
         padding: 0 4px
@@ -96,4 +96,117 @@ section.register
       font-size: px-to-em(16px,16px)
       font-weight: 400
       font-style: normal
+
+//480px horizontal layout
++at-breakpoint($screen2 $break2)
+  section.register
+    +span-columns(12 ,12)
+
+
+
+
+//640px vertical layout
+//960px horizontal layout
+//desktop
++at-breakpoint($screen3 $break3)
+  section.register
+    +span-columns(16 ,16)
+    position: absolute
+    padding: 26px 0 0 0
+    background: $blue
+    opacity: 0.9
+    z-index: 10
+
+    //h3
+    //  +span-columns(10,10)
+    //  margin: 0
+    //  margin-bottom: 16px
+    //  @extend
+    //  font-size:  px-to-em(,16px)
+    //  color: $wp-blue
+    //  line-height: 1em
+
+    p.comment
+      +span-columns(13,16)
+      +pre(1)
+      +post(1)
+      margin-bottom: 0
+      @extend .decimanova
+      font-size: px-to-em(20px,16px)
+      font-weight: 700
+      font-style: italic
+      color: $white
+      line-height: 1.2em
+      span.key-words
+        color: $dark-blue
+
+    form
+      +span-columns(14,16)
+      +pre(1)
+      +post(1)
+      input
+        +border-radius(0px)
+        +box-sizing(content-box)
+      fieldset
+        border: none
+        margin: 0
+        padding: 0
+        p
+          +span-columns(14,14)
+          margin: 0
+          padding: 0
+
+      .email, .name
+        +span-columns(7,14)
+        height: 43px
+        clear: both
+        margin: 12px 0 0 0
+        padding-left: 5px
+        border: 0
+        +border-radius(0)
+        @extend .geogrotesque
+        font-size: px-to-em(19px,16px)
+        font-weight: 400
+        font-style: normal
+        text-indent: 1em
+        +nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        padding: 0
+
+      .send
+        +span-columns(4,14)
+        height: 38px
+        //width: 74px
+        margin: 12px 0
+        padding: 2px 6px
+        text-decoration: none
+        background: $dark-blue
+        border: none
+        text-align: center
+        +box-shadow($orange 2px 2px 0px)
+        @extend .decimanova
+        font-size: px-to-em(16px,16px)
+        font-weight: 700
+        font-style: italic
+        color: $white
+        &:hover
+          background: $blue
+          +box-shadow($dark-blue 2px 2px 0px)
+        &:active
+          padding: 0 4px
+          background: $dark-blue
+          border: $orange 2px solid
+          +box-shadow(none)
+          +box-sizing(content-box)
+
+
+      //todo qual tipo di font per lo status
+      p.status
+        margin-top: 20px
+        @extend .geogrotesque
+        font-size: px-to-em(16px,16px)
+        font-weight: 400
+        font-style: normal
+
 
