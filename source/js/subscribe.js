@@ -15,7 +15,9 @@ function ajaxform_subscribe(formSubmit,status){
             element = $form.find('input[name="element"]').val(),
             language = $form.find('input[name="language"]').val(),
             success = $form.find('input[name="success"]').val(),
+            redirect = $form.find ('input[name="redirect"]').val(),
             url = $form.attr('action');
+
         var $status = $(status);
         var success_path = success+"?"+check_name(name,language)+check_element(element);
 
@@ -54,7 +56,9 @@ function ajaxform_subscribe(formSubmit,status){
                         {
                             $status.text("You're subscribed!");
                             $status.css("color", "green");
-                            window.location.href = success_path;
+                            if(redirect){
+                                window.location.href = success_path;
+                            }
                         }
                     }
                     else

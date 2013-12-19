@@ -5,6 +5,8 @@
 //= require "vendor/jquery.scrollTo"
 //= require "passURL"
 //= require "vendor/jquery.slides"
+//= require "vendor/jquery.hypher.js"
+//= require "vendor/browser/it.js"
 /**
  * Created with JetBrains RubyMine.
  * User: piermariacosina
@@ -15,6 +17,7 @@
 
 
 $(document).ready(function(){
+    $('.hyphenate').hyphenate('it');
     $('#slides').slidesjs({
         width: 940,
         height: 528,
