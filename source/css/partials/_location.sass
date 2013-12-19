@@ -3,12 +3,54 @@ section.location
   position: relative
 
   figure
+    +span-columns(10,10)
     position: relative
+    //min-height: 600px
     overflow: hidden
+
+    #mobile_map_office
+      display: block
+    #desktop_map_office
+      display: none
+
     img
+      width: 600px
+      height: 600px
       position: relative
       display: block
       vertical-align: middle
-      width: 100%
-      height: auto
-      margin-bottom: -15%
+      //min-width: 600px
+      //min-height: 600px
+
+
++at-breakpoint($screen2 $break2)
+  section.location
+    +span-columns(12 ,12)
+
+//640px vertical layout
+//960px horizontal layout
+//desktop
++at-breakpoint($screen3 $break3)
+  section.location
+    +span-columns(16 ,16)
+    position: relative
+
+    figure
+      position: relative
+      max-height: 700px
+      overflow: hidden
+
+      #mobile_map_office
+        display: none
+      #desktop_map_office
+        display: block
+
+
+      img
+        width: 1280px
+        height: 1280px
+        position: relative
+        display: block
+        vertical-align: middle
+
+
