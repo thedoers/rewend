@@ -18,6 +18,7 @@
 
 $(document).ready(function(){
     $('.hyphenate').hyphenate('it');
+    ajaxform_subscribe("#signup-form-rw","#status-rw");
     $('#slides').slidesjs({
         width: 940,
         height: 528,

@@ -1,3 +1,4 @@
+
 activate :deploy do |deploy|
   deploy.method = :ftp
   deploy.host = "web332.webfaction.com"
@@ -6,6 +7,7 @@ activate :deploy do |deploy|
   deploy.path = "/home/piermaria/webapps/devrewend"
   deploy.build_before = true
 end
+
 
 
 
