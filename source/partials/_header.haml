@@ -19,5 +19,9 @@
     .lenguages
       %p
         <a href="">ITA</a> | <a href="">ENG</a>
-    =partial "partials/share_tag", :locals => {:url => "",:twitter_url=>"", :twitter_title => "", :title => ""}
+    .share_menu
+      .heart-share
+        = image_tag 'rewend_menu-heart-share.png', id:'rewend_menu-heart-share', alt:'Rewend HeartShare'
+        %a{ href:"javascript://nop", id:"share-link", onclick:"sharemenu(this);"} SHARE
+      =partial "partials/share_tag", :locals => {:url => "",:twitter_url=>"", :twitter_title => "", :title => ""}
 

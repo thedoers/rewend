@@ -29,3 +29,8 @@ $(document).ready(function(){
 
 });
 
+
+function sharemenu(){
+    $(".share").fadeToggle('slow','linear');
+}
+
