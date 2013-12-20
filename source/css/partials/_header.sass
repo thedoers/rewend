@@ -16,10 +16,11 @@ header
 
   .title
     height: 49px
+    width: 100%
     position: absolute
     bottom: 25%
-    left: columns(2)
     h1
+      text-align: center
       @extend .decimanova
       font-size: px-to-em(65px,16px)
       font-weight: 700
@@ -29,18 +30,20 @@ header
   .bg-header-bar
     +span-columns(10,10)
     height: 40px
-    position: absolute
+    position: fixed
     top: 0
     display: block
     background: $orange
     opacity: 0.4
+    z-index: 100
 
   .header_bar
     +span-columns(10,10)
     height: 40px
-    position: absolute
+    position: fixed
     top: 0
     display: block
+    z-index. 100
 
     .lenguages
       +span-columns(2,10)
@@ -112,12 +115,13 @@ header
 
     .title
       height: 49px
+      width: 100%
       position: absolute
       bottom: 25%
-      left: columns(2)
       h1
+        text-align: center
         @extend .decimanova
-        font-size: px-to-em(65px,16px)
+        font-size: px-to-em(100px,16px)
         font-weight: 700
         font-style: italic
         color: $white
