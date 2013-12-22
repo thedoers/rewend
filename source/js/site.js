@@ -34,3 +34,40 @@ function sharemenu(){
     $(".share").fadeToggle('slow','linear');
 }
 
+$("#storyteller1").hover(function(){
+    $("h2.name_story_teller1").css("display","block");
+    $("h2.name_story_teller2").css("display","none");
+    $("h2.name_story_teller3").css("display","none");
+    $("h2.name_story_teller4").css("display","none");
+    $(".paragraph-story_teller h3.career").text("SCRITTRICE");
+    $(".paragraph-story_teller p.data").html('“Suggerirei di andare nel ristorante <span class="key-words">Yakup2</span> in Tunel Beyoglu perché ci va molta gente, puoi capire molto sulla vita a Istanbul.”');
+});
+
+$("#storyteller2").hover(function(){
+    $("h2.name_story_teller1").css("display","none");
+    $("h2.name_story_teller2").css("display","block");
+    $("h2.name_story_teller3").css("display","none");
+    $("h2.name_story_teller4").css("display","none");
+    $(".paragraph-story_teller h3.career").text("CASALINGHA");
+    $(".paragraph-story_teller p.data").html('“<span class="key-words">Yakup2</span> in Tunel Beyoglu perché ci va molta gente, puoi capire molto sulla vita a Istanbul.”');
+});
+
+$("#storyteller3").hover(function(){
+    $("h2.name_story_teller1").css("display","none");
+    $("h2.name_story_teller2").css("display","none");
+    $("h2.name_story_teller3").css("display","block");
+    $("h2.name_story_teller4").css("display","none");
+    $(".paragraph-story_teller h3.career").text("SCRITTRICE E GIORNALISTA");
+    $(".paragraph-story_teller p.data").html('“ nel ristorante <span class="key-words">Yakup2</span> in Tunel <span class="key-words">Beyoglu</span> perché ci va molta gente, puoi capire molto sulla vita a Istanbul.”');
+});
+
+$("#storyteller4").hover(function(){
+    $("h2.name_story_teller1").css("display","none");
+    $("h2.name_story_teller2").css("display","none");
+    $("h2.name_story_teller3").css("display","none");
+    $("h2.name_story_teller4").css("display","block");
+    $(".paragraph-story_teller h3.career").text("FOTOGRAFO, PROFESSORE");
+    $(".paragraph-story_teller p.data").html('“ di andare nel ristorante <span class="key-words">Yakup2</span> in Tunel <span class="key-words">Beyoglu</span> perché ci va molta gente, puoi capire molto sulla vita a Istanbul.”');
+});
+
+
