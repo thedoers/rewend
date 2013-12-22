@@ -1,44 +1,172 @@
 .author-square
   +span-columns(10,10)
-  margin: 10px 0 0 0
 
-  .container-left
-    +span-columns(4,10)
-    //+pre(1)
-    margin: 0
-    h3.career
-      margin: 22px 0 0 0
-      @extend .geogrotesque
-      font-size: px-to-em(15px,16px)
-      font-weight: 700
-      font-style: normal
-      color: $orange
-      line-height: 1em
+  .container_mobile
+    display: block
+  .container_desktop
+    display: none
 
+  .container_mobile
+    +span-columns(10,10)
+    margin: 10px 0 0 0
 
-  .container-right
-    +span-columns(4 omega,10)
-    //+post(1)
-
-    h2.name
+    .container-left
+      +span-columns(4,10)
+      //+pre(1)
       margin: 0
-      @extend .geogrotesque
-      font-size: px-to-em(30px,16px)
-      font-weight: 700
-      font-style: normal
-      color: $blue
-      line-height: 1em
+      h3.career
+        margin: 22px 0 0 0
+        @extend .geogrotesque
+        font-size: px-to-em(15px,16px)
+        font-weight: 700
+        font-style: normal
+        color: $orange
+        line-height: 1em
 
-    p.data
-      margin: 0
-      @extend .decimanova
-      font-size: px-to-em(14px,16px)
-      font-weight: 700
-      font-style: italic
-      color: $blue
-      line-height: 1.2em
 
-    span.key-words
-      color: $dark-blue
+    .container-right
+      +span-columns(4 omega,10)
+      //+post(1)
+
+      h2.name
+        margin: 0
+        @extend .geogrotesque
+        font-size: px-to-em(30px,16px)
+        font-weight: 700
+        font-style: normal
+        color: $blue
+        line-height: 1em
+
+      p.data
+        margin: 0
+        @extend .decimanova
+        font-size: px-to-em(14px,16px)
+        font-weight: 700
+        font-style: italic
+        color: $blue
+        line-height: 1.2em
+
+      span.key-words
+        color: $dark-blue
+
+//480px horizontal layout
++at-breakpoint($screen2 $break2)
+  .author-square
+    +span-columns(12 ,12)
+
+
+
+//640px vertical layout
+//960px horizontal layout
+//desktop
++at-breakpoint($screen3 $break3)
+  .author-square
+    +span-columns(15 ,16)
+    margin: 32px 0
+    +pre(1)
+    .container_mobile
+      display: none
+    .container_desktop
+      display: block
+
+    .container_desktop
+      +span-columns(15,15)
+
+      figure
+        height: 238px
+        margin-bottom: 25px
+        position: relative
+
+      figure.story_teller1  h2.name_story_teller1, figure.story_teller2  h2.name_story_teller2, figure.story_teller3  h2.name_story_teller3, figure.story_teller4  h2.name_story_teller4
+        position: absolute
+        @extend .geogrotesque
+        font-size: px-to-em(16px,16px)
+        font-weight: 700
+        font-style: normal
+        color: $white
+        line-height: 1em
+
+      figure.story_teller1
+        +span-columns(4,15)
+
+        #storyteller1
+          position: absolute
+          bottom: 57px
+
+        h2.name_story_teller1
+          top: 48px
+          left: 24px
+          display: none
+
+      figure.story_teller2
+        +span-columns(3,15)
+
+        #storyteller2
+          position: absolute
+          top: 0
+
+        h2.name_story_teller2
+          top: 25px
+          display: none
+
+      figure.story_teller3
+        +span-columns(4,15)
+
+        #storyteller3
+          position: absolute
+          bottom: 0
+
+        h2.name_story_teller3
+          bottom: 28px
+          left: 20px
+          display: block
+
+      figure.story_teller4
+        +span-columns(4 omega,15)
+
+        #storyteller4
+          position: absolute
+          top: 0
+
+        h2.name_story_teller4
+          top: 21px
+          left: 27px
+          display: none
+
+      .paragraph-story_teller1,  .paragraph-story_teller2,  .paragraph-story_teller3,  .paragraph-story_teller4
+        +span-columns(14, 15)
+        +post(1)
+
+        h3.career
+          margin: 0
+          @extend .geogrotesque
+          font-size: px-to-em(18px,16px)
+          font-weight: 700
+          font-style: normal
+          color: $orange
+          line-height: 1em
+
+        p.data
+          margin: 0
+          @extend .decimanova
+          font-size: px-to-em(20px,16px)
+          font-weight: 700
+          font-style: italic
+          color: $blue
+          line-height: 1.2em
+
+      .paragraph-story_teller1
+        display: none
+      .paragraph-story_teller2
+        display: none
+      .paragraph-story_teller3
+        display: block
+      .paragraph-story_teller4
+        display: none
+
+
+
+
+
 
 
