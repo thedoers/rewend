@@ -170,19 +170,25 @@ header
           position: relative
           display: block
 
-          #share-link
+          p.text
             position: absolute
-            left: 20px
-            bottom: 38px
+            left: 19px
+            bottom: 25px
             text-decoration: none
             @extend .geogrotesque
             font-size: px-to-em(14px,16px)
             font-weight: 600
             font-style: normal
             color: $black
-            &:hover
-              text-decoration: underline
 
+
+        #share-link
+          &:hover
+            p.text
+              text-decoration: underline
+          &:normal
+            p.text
+              text-decoration: none
 
         .share
           margin-top: 0
