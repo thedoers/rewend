@@ -1,10 +1,12 @@
-//= require "vendor/jquery"
+//= require "jquery/jquery"
 //= require "subscribe"
-//= require "vendor/jquery.easing.min"
-//= require "vendor/jquery.fadeloader"
-//= require "vendor/jquery.scrollTo"
+//= require "jquery.easing/js/jquery.easing.min"
+//= require "jquery.scrollTo/jquery.scrollTo"
+//= require "Slides/source/slides"
 //= require "passURL"
-//= require "vendor/jquery.slides"
+//= require "hypher/dist/jquery.hypher"
+//= require "hyphenation-patterns/dist/browser/it"
+
 /**
  * Created with JetBrains RubyMine.
  * User: piermariacosina
@@ -15,16 +17,18 @@
 
 
 $(document).ready(function(){
-    $('#slides').slidesjs({
-        width: 940,
-        height: 528,
-        play: {
-            active: true,
-            auto: true,
-            interval: 4000,
-            swap: true
-        }
-    });
+   // $('.hyphenate').hyphenate('it');
+    ajaxform_subscribe("#signup-form-rw","#status-rw");
+//    $('#slides').slidesjs({
+//        width: 940,
+//        height: 528,
+//        play: {
+//            active: true,
+//            auto: true,
+//            interval: 4000,
+//            swap: true
+//        }
+//    });
 
 
 });
