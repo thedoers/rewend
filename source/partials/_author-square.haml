@@ -1,16 +1,55 @@
-.author-square
-  .container-left
-    %figure
-      //todo mettere immagine originale
-      = image_tag 'rewend_mobile-author-photo-mauro.png', id:'author-ph_square', alt:''
+%section.author-square
 
-    %h3.career
-      SCRITTORE,<br>
-      DOCUMENTARISTA, <br>
-      REGISTA
+  .container_mobile
+    .container-left
+      %figure
+        //todo mettere immagine originale
+        = image_tag 'rewend_mobile-author-photo-mauro.png', id:'author-ph_square', alt:''
 
-  .container-right
-    %h2.name
-      METIN YEĞIN
-    %p.data.hyphenate
-      “Troverete <span class="key-words">Vefa</span>, il più noto venditore di <span class="key-words">Boza</span>  proprio imboccando la prima strada sul il lato destro dopo aver lasciato la <span class="key-words">moschea </span> <span class="key-words">Süleymaniye </span> dopo tre o quattro strade.”
+      %h3.career
+        SCRITTORE,<br>
+        DOCUMENTARISTA, <br>
+        REGISTA
+
+    .container-right
+      %h2.name
+        METIN YEĞIN
+      %p.data
+        “Troverete <span class="key-words">Vefa</span>, il più noto venditore di <span class="key-words">Boza</span>  proprio imboccando la prima strada sul il lato destro dopo aver lasciato la <span class="key-words">moschea </span> <span class="key-words">Süleymaniye </span> dopo tre o quattro strade.”
+
+  .container_desktop
+
+    %figure.story_teller1
+      = image_tag 'rewend_desktop-storyteller1.png', id:'storyteller1', width:'130px', height: 'auto', alt:'Rewend_storyteller Image'
+      %h2.name_story_teller1
+        FUSUN<br>
+        DEMIREL
+
+    %figure.story_teller2
+      = image_tag 'rewend_desktop-storyteller2.png', id:'storyteller2', width:'90px', height: 'auto', alt:'Rewend_storyteller Image'
+      %h2.name_story_teller2
+        METIN<br>
+        YEĞIN
+
+    %figure.story_teller3
+      = image_tag 'rewend_desktop-storyteller3.png', id:'storyteller3', width:'130px', height: 'auto', alt:'Rewend_storyteller Image'
+      %h2.name_story_teller3
+        ESMAHAN<br>
+        AYKOL
+
+    %figure.story_teller4
+      = image_tag 'rewend_desktop-storyteller4.png', id:'storyteller4', width:'134px', height: 'auto', alt:'Rewend_storyteller Image'
+      %h2.name_story_teller4
+        MEHMET<br>
+        GÜRELI
+
+
+
+    .paragraph-story_teller
+
+      %h3.career
+        SCRITTRICE E GIORNALISTA
+
+      %p.data
+        “Suggerirei di andare nel ristorante <span class="key-words">Yakup2</span> in Tunel <span class="key-words">Beyoglu</span> perché ci va molta gente, puoi capire molto sulla vita a Istanbul.”
+

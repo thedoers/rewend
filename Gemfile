@@ -19,3 +19,4 @@ gem "middleman-cloudfront"
 gem 'middleman-s3_sync'
 
 gem 'foreman','=0.61'
+

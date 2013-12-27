@@ -5,20 +5,23 @@ header
   .image-container
     margin-left: -($grid-padding)
     margin-right: -($grid-padding)
-    max-height: 325px
+    max-height: 350px
     overflow: hidden
+
     img
       height: auto
       width: 100%
       z-index: -10
+      vertical-align: middle
       display: block
 
   .title
     height: 49px
+    width: 100%
     position: absolute
     bottom: 25%
-    left: columns(2)
     h1
+      text-align: center
       @extend .decimanova
       font-size: px-to-em(65px,16px)
       font-weight: 700
@@ -28,17 +31,20 @@ header
   .bg-header-bar
     +span-columns(10,10)
     height: 40px
-    position: absolute
+    position: fixed
     top: 0
+    display: block
     background: $orange
     opacity: 0.4
+    z-index: 100
 
   .header_bar
     +span-columns(10,10)
     height: 40px
-    position: absolute
+    position: fixed
     top: 0
     display: block
+    z-index: 100
 
     .lenguages
       +span-columns(2,10)
@@ -55,100 +61,16 @@ header
           text-decoration: none
           +link-colors($white,$white,$white,$white,$white)
 
-    //todo si deve togliere icona pinterest?
-    .share
+    .share_menu
       +span-columns(6 omega,10)
       +post(1)
-      margin-top: 5px
-      .addthis_toolbox
-        float: right
-      a
-        cursor: pointer
-        border: none
-        text-decoration: none
-        width: 34px
-        height: 34px
-        display: inline-block
-        text-align: center
-        font-size: px-to-em(20px,16px)
-        line-height: px-to-em(22px,16px)
-        +link-colors($white, $pink, $white, $white, $white)
 
-      a:nth-child(4)
+      .heart-share
         display: none
 
-//480px horizontal layout
-+at-breakpoint($screen2 $break2)
-  header
-    +span-columns(12 ,12)
-
-
-
-//640px vertical layout
-//960px horizontal layout
-//desktop
-+at-breakpoint($screen3 $break3)
-  header
-    +span-columns(16 ,16)
-    position: relative
-
-    .image-container
-      width: 100%
-      max-height: 100%
-      overflow: visible
-      img
-        width: 100%
-        height: auto
-        vertical-align: middle
-
-
-    .title
-      height: 49px
-      position: absolute
-      bottom: 25%
-      left: columns(2)
-      h1
-        @extend .decimanova
-        font-size: px-to-em(65px,16px)
-        font-weight: 700
-        font-style: italic
-        color: $white
-
-    .bg-header-bar
-      +span-columns(10,10)
-      height: 40px
-      position: absolute
-      top: 0
-      background: $orange
-      opacity: 0.4
-
-    .header_bar
-      +span-columns(10,10)
-      height: 40px
-      position: absolute
-      top: 0
-      display: block
-
-      .lenguages
-        +span-columns(2,10)
-        +pre(1)
-
-        p
-          margin: 10px 0 0 0
-          @extend .geogrotesque
-          font-size: px-to-em(10px,16px)
-          font-weight: 600
-          font-style: normal
-          color: $white
-          a
-            text-decoration: none
-            +link-colors($white,$white,$white,$white,$white)
-
-      //todo si deve togliere icona pinterest?
       .share
-        +span-columns(6 omega,10)
-        +post(1)
         margin-top: 5px
+        display: block
         .addthis_toolbox
           float: right
         a
@@ -166,17 +88,132 @@ header
         a:nth-child(4)
           display: none
 
+//480px horizontal layout
++at-breakpoint($screen2 $break2)
+  header
+    +span-columns(12 ,12)
+
+    .image-container
+      max-height: 425px
+
+//640px vertical layout
+//960px horizontal layout
+//desktop
++at-breakpoint($screen3 $break3)
+  header
+    +span-columns(16 ,16)
+    position: relative
+
+    .image-container
+      width: 100%
+      max-height: 1000px
+      overflow: hidden
+
+      img
+        width: 100%
+        height: auto
+        vertical-align: middle
+        display: block
+
+
+    .title
+      height: 49px
+      width: 100%
+      position: absolute
+      bottom: 25%
+      h1
+        text-align: center
+        @extend .decimanova
+        font-size: px-to-em(100px,16px)
+        font-weight: 700
+        font-style: italic
+        color: $white
+
+    .bg-header-bar
+      display: none
+
+    .header_bar
+      +span-columns(10,10)
+      height: 40px
+      position: absolute
+      top: 0
+      display: block
+
+      .lenguages
+        +span-columns(2,10)
+        +pre(0)
+        clear: both
+
+        p
+          width: 92px
+          height: 40px
+          margin: 10px 0 0 0
+          background: $orange
+          display: inline-block
+          text-align: center
+          @extend .geogrotesque
+          font-size: px-to-em(14px,16px)
+          font-weight: 600
+          font-style: normal
+          color: $white
+          line-height: 3em
+          a
+            text-decoration: none
+            +link-colors($white,$white,$white,$white,$white)
+
+      .share_menu
+        +span-columns(2,10)
+        +post(0)
+        clear: both
+
+        .heart-share
+          position: relative
+          display: block
+
+          p.text
+            position: absolute
+            left: 19px
+            bottom: 25px
+            text-decoration: none
+            @extend .geogrotesque
+            font-size: px-to-em(14px,16px)
+            font-weight: 600
+            font-style: normal
+            color: $black
+
+
+        #share-link
+          &:hover
+            p.text
+              text-decoration: underline
+          &:normal
+            p.text
+              text-decoration: none
+
+        .share
+          margin-top: 0
+          display: none
+          .addthis_toolbox
+            float: none
+          a
+            width: 92px
+            height: 40px
+            margin: 8px 0 0 0
+            +float-left
+            display: inline-block
+            clear: both
+            text-decoration: none
+            cursor: pointer
+            border: none
+            text-align: center
+            background: $white
+            font-size: px-to-em(20px,16px)
+            line-height: px-to-em(32px,16px)
+            +link-colors($orange, $pink, $orange, $orange, $orange)
+
+          a:nth-child(4)
+            display: none
 
 
 
-  //
-  //
-  //
-  //+at-breakpoint($screen4 $break4)
-  //header
-  //  +span-columns(16 ,16)
-  //
-  //
-  //+at-breakpoint($screen5 $break5)
-  //header
-  //  +span-columns(16 ,16)
+

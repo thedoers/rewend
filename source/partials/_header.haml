@@ -1,13 +1,16 @@
 -# coding: utf-8
 %header
   .image-container
-    = image_tag 'rewend_bg-mobile-header.png', id:'rewend_bg-header', alt:'Rewend'
+    = image_tag 'rewend_bg-mobile-header.png', id:'rewend_mobile-bg-header', alt:'Rewend-Header Images'
 
-  .bg-header-bar
+
+
 
   .title
     %h1
       Istanbul
+
+  .bg-header-bar
 
   .header_bar
     -#%ul.lenguages
@@ -19,5 +22,9 @@
     .lenguages
       %p
         <a href="">ITA</a> | <a href="">ENG</a>
-    =partial "partials/share_tag", :locals => {:url => "",:twitter_url=>"", :twitter_title => "", :title => ""}
+    .share_menu
+      .heart-share
+        <a href= "javascript://nop" id= "share-link"  onclick= "sharemenu(this)"><img src="images/rewend_menu-heart-share.png" id="rewend_menu-heart-share" alt="Rewend HeartShare"><p class= "text">SHARE</p></a>
+
+      =partial "partials/share_tag", :locals => {:url => "",:twitter_url=>"", :twitter_title => "", :title => ""}
 
