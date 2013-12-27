@@ -1,4 +1,4 @@
-//= require "vendor/jquery"
+//= require "jquery/jquery"
 //= require "subscribe"
 //= require "vendor/jquery.easing.min"
 //= require "vendor/jquery.fadeloader"

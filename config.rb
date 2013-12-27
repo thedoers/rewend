@@ -1,3 +1,5 @@
+require 'builder'
+require 'susy'
 
 activate :deploy do |deploy|
   deploy.method = :ftp
@@ -7,9 +9,6 @@ activate :deploy do |deploy|
   deploy.path = "/home/piermaria/webapps/devrewend"
   deploy.build_before = true
 end
-
-
-
 
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                     = 's3.rewend.co' # The name of the S3 bucket you are targetting. This is globally unique.
@@ -30,31 +29,14 @@ activate :cloudfront do |cf|
   cf.after_build = false
 end
 
-require 'builder'
-
 page "/", :layout => :html5
 page "/404.html", :layout => :html5
-
-
 page "/sitemap.xml", :layout => false
 
-
-
-
-require 'susy'
-
-
 set :css_dir, 'css'
-
 set :js_dir, 'js'
-
 set :images_dir, 'images'
-
-
 set :fonts_dir, 'fonts'
-
-activate :automatic_image_sizes
-
 
 # Build-specific configuration
 configure :build do
