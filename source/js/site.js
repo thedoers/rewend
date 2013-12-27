@@ -6,7 +6,7 @@
 //= require "passURL"
 //= require "hypher/dist/jquery.hypher"
 //= require "hyphenation-patterns/dist/browser/it"
-
+//= require "bxslider/jquery.bxSlider.min"
 /**
  * Created with JetBrains RubyMine.
  * User: piermariacosina
@@ -29,6 +29,8 @@ $(document).ready(function(){
 //            swap: true
 //        }
 //    });
+
+    $('.bxslider').bxSlider();
 
 
 });
