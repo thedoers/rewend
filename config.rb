@@ -29,6 +29,11 @@ activate :cloudfront do |cf|
   cf.after_build = false
 end
 
+activate :bower
+activate :automatic_image_sizes
+activate :livereload
+
+
 page "/", :layout => :html5
 page "/404.html", :layout => :html5
 page "/sitemap.xml", :layout => false

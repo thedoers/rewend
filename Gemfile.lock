@@ -194,7 +194,6 @@ DEPENDENCIES
   middleman-livereload
   middleman-minify-html
   middleman-s3_sync
-  mini_magick
   oily_png
   oj
   susy
