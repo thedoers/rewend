@@ -1,6 +1,7 @@
 section.placeholder
   margin: 0 auto
   width: auto
+  position: relative
 
   /*next button*/
   .bx-next
@@ -15,7 +16,7 @@ section.placeholder
   
 
   /*previous button*/
-  .bx-prev 
+  .bx-prev
     position: absolute
     top: 40%
     left: -50px
@@ -26,25 +27,28 @@ section.placeholder
     background: url(img/bxslider/gray_prev.png) no-repeat 0 -30px
 
   /*pager links*/
-  .bx-pager a
-    margin-right: 5px
-    color: #fff
-    padding: 3px 8px 3px 6px
-    font-size: 12px
-    zoom: 1
-    background: url(img/bxslider/gray_pager.png) no-repeat 0 -20px
+  .bx-pager
+    a
+      margin-right: 5px
+      color: #fff
+      padding: 3px 8px 3px 6px
+      font-size: 12px
+      zoom: 1
+      background: url(img/bxslider/gray_pager.png) no-repeat 0 -20px
   
 
   /*auto start button*/
-  .bx-auto .start
-    background: url(img/bxslider/gray_auto.png) no-repeat 0 2px
-    padding-left: 13px
+  .bx-auto
+    .start
+      background: url(img/bxslider/gray_auto.png) no-repeat 0 2px
+      padding-left: 13px
   
 
   /*auto stop button*/
-  .bx-auto .stop
-    background: url(img/bxslider/gray_auto.png) no-repeat 0 -14px
-    padding-left: 13px
+  .bx-auto
+    .stop
+      background: url(img/bxslider/gray_auto.png) no-repeat 0 -14px
+      padding-left: 13px
   
 
 /*
@@ -53,14 +57,12 @@ section.placeholder
 
 
   /*next/prev button hover state*/
-  .bx-next:hover,
-  .bx-prev:hover
+  .bx-next &:hover, .bx-prev &:hover
     background-position: 0 0
 
 
   /*pager links hover and active states*/
-  .bx-pager .pager-active,
-  .bx-pager a:hover
+  .bx-pager .pager-active, .bx-pager a &:hover
     background-position: 0 0
   
 
@@ -86,9 +88,10 @@ section.placeholder
     padding-top: 15px
 
 
-  .bx-auto a
-    color: #666
-    font-size: 12px
+  .bx-auto
+    a
+      color: #666
+      font-size: 12px
 
 
 
