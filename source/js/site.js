@@ -6,7 +6,8 @@
 //= require "passURL"
 //= require "hypher/dist/jquery.hypher"
 //= require "hyphenation-patterns/dist/browser/it"
-//= require "bxslider/jquery.bxSlider.min"
+//= require "bxslider-4/jquery.bxslider"
+
 /**
  * Created with JetBrains RubyMine.
  * User: piermariacosina
@@ -18,6 +19,7 @@
 
 $(document).ready(function(){
    // $('.hyphenate').hyphenate('it');
+    $('#bxslider').bxSlider();
     ajaxform_subscribe("#signup-form-rw","#status-rw");
 //    $('#slides').slidesjs({
 //        width: 940,
@@ -29,8 +31,6 @@ $(document).ready(function(){
 //            swap: true
 //        }
 //    });
-
-    $('.bxslider').bxSlider();
 
 
 });

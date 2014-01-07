@@ -1,177 +1,79 @@
 section.placeholder
   margin: 0 auto
   width: auto
-  position: relative
 
-  /*next button*/
-  .bx-next
-    position: absolute
-    top: 40%
-    right: -50px
-    z-index: 999
-    width: 30px
-    height: 30px
-    text-indent: -999999px
-    background: url(img/bxslider/gray_next.png) no-repeat 0 -30px
-  
+  #bxslider
+    img
+      width: 100%
+      height: auto
 
-  /*previous button*/
-  .bx-prev
-    position: absolute
-    top: 40%
-    left: -50px
-    z-index: 999
-    width: 30px
-    height: 30px
-    text-indent: -999999px
-    background: url(img/bxslider/gray_prev.png) no-repeat 0 -30px
+  #slides
+    display: none
+    .slidesjs-navigation
+      margin-top: 5px
+    img
+      height: auto
 
-  /*pager links*/
-  .bx-pager
-    a
+  a
+    &.slidesjs-next, &.slidesjs-previous, &.slidesjs-play, &.slidesjs-stop
+      background-image: url(img/btns-next-prev.png)
+      background-repeat: no-repeat
+      display: block
+      width: 12px
+      height: 18px
+      overflow: hidden
+      text-indent: -9999px
+      float: left
       margin-right: 5px
-      color: #fff
-      padding: 3px 8px 3px 6px
-      font-size: 12px
-      zoom: 1
-      background: url(img/bxslider/gray_pager.png) no-repeat 0 -20px
-  
+    &.slidesjs-next
+      margin-right: 10px
+      background-position: -12px 0
+    &:hover.slidesjs-next
+      background-position: -12px -18px
+    &.slidesjs-previous
+      background-position: 0 0
+    &:hover.slidesjs-previous
+      background-position: 0 -18px
+    &.slidesjs-play
+      width: 15px
+      background-position: -25px 0
+    &:hover.slidesjs-play
+      background-position: -25px -18px
+    &.slidesjs-stop
+      width: 18px
+      background-position: -41px 0
+    &:hover.slidesjs-stop
+      background-position: -41px -18px
 
-  /*auto start button*/
-  .bx-auto
-    .start
-      background: url(img/bxslider/gray_auto.png) no-repeat 0 2px
-      padding-left: 13px
-  
+  .slidesjs-pagination
+    margin: 7px 0 0
+    float: right
+    list-style: none
+    li
+      float: left
+      margin: 0 1px
+      a
+        display: block
+        width: 13px
+        height: 0
+        padding-top: 13px
+        background-image: url(img/pagination.png)
+        background-position: 0 0
+        float: left
+        overflow: hidden
+        &.active
+          background-position: 0 -13px
+        &:hover
+          &.active
+            background-position: 0 -13px
+          background-position: 0 -26px
 
-  /*auto stop button*/
-  .bx-auto
-    .stop
-      background: url(img/bxslider/gray_auto.png) no-repeat 0 -14px
-      padding-left: 13px
-  
-
-/*
- * End color scheme styles
- */
-
-
-  /*next/prev button hover state*/
-  .bx-next &:hover, .bx-prev &:hover
-    background-position: 0 0
-
-
-  /*pager links hover and active states*/
-  .bx-pager .pager-active, .bx-pager a &:hover
-    background-position: 0 0
-  
-
-  /*pager wrapper*/
-  .bx-pager
-    text-align: center
-    padding-top: 7px
-    font-size: 12px
-    color: #666
-
-
-  /*captions*/
-  .bx-captions
-    text-align: center
-    font-size: 12px
-    padding: 7px 0
-    color: #666
-
-
-  /*auto controls*/
-  .bx-auto
-    text-align: center
-    padding-top: 15px
-
-
-  .bx-auto
-    a
-      color: #666
-      font-size: 12px
-
-
-
-
-
-
-
-
-
-
-
-
-
-//#slides
-  //  display: none
-  //  .slidesjs-navigation
-  //    margin-top: 5px
-  //  img
-  //    height: auto
-  //
-  //a
-  //  &.slidesjs-next, &.slidesjs-previous, &.slidesjs-play, &.slidesjs-stop
-  //    background-image: url(img/btns-next-prev.png)
-  //    background-repeat: no-repeat
-  //    display: block
-  //    width: 12px
-  //    height: 18px
-  //    overflow: hidden
-  //    text-indent: -9999px
-  //    float: left
-  //    margin-right: 5px
-  //  &.slidesjs-next
-  //    margin-right: 10px
-  //    background-position: -12px 0
-  //  &:hover.slidesjs-next
-  //    background-position: -12px -18px
-  //  &.slidesjs-previous
-  //    background-position: 0 0
-  //  &:hover.slidesjs-previous
-  //    background-position: 0 -18px
-  //  &.slidesjs-play
-  //    width: 15px
-  //    background-position: -25px 0
-  //  &:hover.slidesjs-play
-  //    background-position: -25px -18px
-  //  &.slidesjs-stop
-  //    width: 18px
-  //    background-position: -41px 0
-  //  &:hover.slidesjs-stop
-  //    background-position: -41px -18px
-  //
-  //.slidesjs-pagination
-  //  margin: 7px 0 0
-  //  float: right
-  //  list-style: none
-  //  li
-  //    float: left
-  //    margin: 0 1px
-  //    a
-  //      display: block
-  //      width: 13px
-  //      height: 0
-  //      padding-top: 13px
-  //      background-image: url(img/pagination.png)
-  //      background-position: 0 0
-  //      float: left
-  //      overflow: hidden
-  //      &.active
-  //        background-position: 0 -13px
-  //      &:hover
-  //        &.active
-  //          background-position: 0 -13px
-  //        background-position: 0 -26px
-  //
-  //#slides a
-  //  &:link, &:visited
-  //    color: #333333
-  //  &:hover, &:active
-  //    color: #9e2020
-  ////+span-columns(10,10)
+  #slides a
+    &:link, &:visited
+      color: #333333
+    &:hover, &:active
+      color: #9e2020
+  //+span-columns(10,10)
 
   figure
     position: relative
@@ -209,3 +111,20 @@ section.placeholder
         font-style: italic
         color: $white
         line-height: 1em
+  //.messages
+  //  +span-columns(8,10)
+  //  +pre(1)
+  //  //+post(1)
+  //  p
+  //    margin: 0
+  //    @extend .decimanova
+  //    font-size: px-to-em(15px,16px)
+  //    font-weight: 700
+  //    font-style: italic
+  //    color: $clear-orange
+  //    line-height: 1em
+  //    span.key-words
+  //      color: $orange
+  //
+  //
+  //
