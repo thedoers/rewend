@@ -32,7 +32,7 @@ end
 activate :bower
 activate :automatic_image_sizes
 activate :livereload
-
+activate :i18n
 
 page "/", :layout => :html5
 page "/404.html", :layout => :html5
