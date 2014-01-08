@@ -19,8 +19,8 @@
       height: 28px
       background: $blue
       position: absolute
-      bottom: -39px
-
+      bottom: -25px
+      z-index: -1
 
   .container_mobile
     +span-columns(10,10)
@@ -80,6 +80,10 @@
     +span-columns(15 ,16)
     margin: 32px 0
     +pre(1)
+
+    .bx-controls
+      display: none
+
     .container_mobile
       display: none
     .container_desktop
