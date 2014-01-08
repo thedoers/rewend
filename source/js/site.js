@@ -2,7 +2,6 @@
 //= require "subscribe"
 //= require "jquery.easing/js/jquery.easing.min"
 //= require "jquery.scrollTo/jquery.scrollTo"
-//= require "Slides/source/slides"
 //= require "passURL"
 //= require "hypher/dist/jquery.hypher"
 //= require "hyphenation-patterns/dist/browser/it"

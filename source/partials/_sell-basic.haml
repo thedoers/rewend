@@ -3,14 +3,15 @@
     = image_tag 'rewend_buy-images.png', id:'mobile-devices', alt:'Rewend-Buy'
     = image_tag 'rewend_desktop-buy-images.png', id:'desktop-devices',width:"200px", height: "140px", alt:'Rewend-Buy'
     //valori di prova per immagine desktop-buy: w200 h140 ,w180 h120
-    -#%p  //todo come immagine e link o come font e link
     -#  Amazon
   .container-right
     = image_tag 'rewend_buyplus-images.png', id:'mobile-devicesplus', alt:'Rewend-BuyPlus'
     = image_tag 'rewend_desktop-buyplus-images.png', id:'desktop-devicesplus',width:"295px", height: "105px", alt:'Rewend-BuyPlus'
     //valori di prova per immagine desktop-buyplus:  w280 h105, w205 h90, w295 h105
     -#.buttons
-    %a{href:"", id: "buy25"}
+    %a{"data-celery" => "istanbul",href:"#", id: "buy1"}
       LO VOGLIO!
-    %a{ href:"", id: "buy10"}
+    %a{ href:"http://sbx.sk/AkcJ", id: "buy2"}
       LO VOGLIO!
+
+    %script{src: "https://www.trycelery.com/js/celery.js", type: "text/javascript"}

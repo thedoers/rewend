@@ -1,6 +1,9 @@
 .author-triangle
   +span-columns(10,10)
-  margin: 10px 0 0 0
+  figure
+    img
+      width: 100%
+      height: auto
 
   .container-left
     +span-columns(4,10)
@@ -13,7 +16,7 @@
       display: none
 
   .container-right
-    +span-columns(4 omega,10)
+    +span-columns(4 ,10)
     //+post(1)
 
     h2.name
@@ -54,13 +57,13 @@
 //desktop
 +at-breakpoint($screen3 $break3)
   .author-triangle
-    +span-columns(11 ,16)
-    margin: 0
+    +span-columns(9 ,16)
+
 
     .container-left
-      +span-columns(6,11)
+      +span-columns(5,9)
       //+pre(1)
-      margin: 0
+
 
       #mobile-author-ph_triangle
         display: none
@@ -68,7 +71,7 @@
         display: block
 
     .container-right
-      +span-columns(5 omega,11)
+      +span-columns(4 omega,9)
       //+post(1)
 
       h2.name
