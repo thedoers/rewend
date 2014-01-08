@@ -19,20 +19,9 @@
 
 $(document).ready(function(){
    // $('.hyphenate').hyphenate('it');
-    $('#bxslider').bxSlider();
+    $('.container_mobile').bxSlider();
+    $('#bxslider').bxSlider({auto: true});
     ajaxform_subscribe("#signup-form-rw","#status-rw");
-//    $('#slides').slidesjs({
-//        width: 940,
-//        height: 528,
-//        play: {
-//            active: true,
-//            auto: true,
-//            interval: 4000,
-//            swap: true
-//        }
-//    });
-
-
 });
 
 
@@ -46,7 +35,7 @@ $("#storyteller1").hover(function(){
     $("h2.name_story_teller3").css("display","none");
     $("h2.name_story_teller4").css("display","none");
     $(".paragraph-story_teller h3.career").text("ATTRICE E TRADUTTRICE");
-    $(".paragraph-story_teller p.data").html('“Mi piace specialmente <span class="key-words">piazza Ortaköy</span>, e la zona dove finisce il Bosforo.”	');
+    $(".paragraph-story_teller p.data").html('“Mi piace specialmente <span class="key-words">piazza Ortaköy</span>, e la zona dove finisce il Bosforo.”');
 });
 
 $("#storyteller2").hover(function(){
@@ -55,7 +44,7 @@ $("#storyteller2").hover(function(){
     $("h2.name_story_teller3").css("display","none");
     $("h2.name_story_teller4").css("display","none");
     $(".paragraph-story_teller h3.career").text("SCRITTORE, DOCUMENTARISTA E REGISTA");
-    $(".paragraph-story_teller p.data").html('“Troverete Vefa, <span class="key-words">il più noto venditore di Boza</span> proprio imboccando la prima strada sul il lato destro dopo aver lasciato la moschea Süleymaniye dopo tre o quattro strade.”');
+    $(".paragraph-story_teller p.data").html('“Troverete Vefa, <span class="key-words">il più noto venditore di Boza</span> proprio imboccando la prima strada sul lato destro dopo aver lasciato la moschea Süleymaniye dopo tre o quattro strade.”');
 });
 
 $("#storyteller3").hover(function(){
