@@ -1,8 +1,8 @@
 .authors
-  +span-columns(10,10)
+  +span-columns(7,7)
 
   .messages
-    +span-columns(8,10)
+    +span-columns(5,7)
     +pre(1)
     //+post(1)
     margin-top: 20px
@@ -21,7 +21,9 @@
 +at-breakpoint($screen2 $break2)
   .authors
     +span-columns(12 ,12)
-
+    .messages
+      +span-columns(10,12)
+      +pre(1)
 //640px vertical layout
 //960px horizontal layout
 //desktop

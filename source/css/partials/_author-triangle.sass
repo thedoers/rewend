@@ -1,14 +1,17 @@
 .author-triangle
-  +span-columns(10,10)
+  +span-columns(7,7)
   figure
     img
       width: 100%
       height: auto
 
   .container-left
-    +span-columns(4,10)
+    +span-columns(3,7)
     //+pre(1)
-    margin: 0
+    figure
+      img
+        width: 100%
+        height: auto
 
     #mobile-author-ph_triangle
       display: block
@@ -16,13 +19,13 @@
       display: none
 
   .container-right
-    +span-columns(4 ,10)
+    +span-columns(4 omega,7)
     //+post(1)
 
     h2.name
       margin: 0
       @extend .geogrotesque
-      font-size: px-to-em(15px,16px)
+      font-size: px-to-em(18px,16px)
       font-weight: 700
       font-style: normal
       color: $dark-blue
@@ -31,7 +34,7 @@
     h3.career
       margin: 22px 0 0 0
       @extend .geogrotesque
-      font-size: px-to-em(12px,16px)
+      font-size: px-to-em(17px,16px)
       font-weight: 700
       font-style: normal
       color: $dark-blue
@@ -40,7 +43,7 @@
     p.data
       margin: 0
       @extend .geogrotesque
-      font-size: px-to-em(13px,16px)
+      font-size: px-to-em(16px,16px)
       font-weight: 400
       font-style: normal
       color: $blue
@@ -50,8 +53,12 @@
 +at-breakpoint($screen2 $break2)
   .author-triangle
     +span-columns(12 ,12)
-
-
+    .container-left
+      +span-columns(4 ,12)
+      +pre(1)
+    .container-right
+      +span-columns(6 omega,12)
+      +post(1)
 //640px vertical layout
 //960px horizontal layout
 //desktop
@@ -61,8 +68,8 @@
 
 
     .container-left
-      +span-columns(5,9)
-      //+pre(1)
+      +span-columns(4,9)
+      +pre(0)
 
 
       #mobile-author-ph_triangle
@@ -71,7 +78,8 @@
         display: block
 
     .container-right
-      +span-columns(4 omega,9)
+      +span-columns(5 omega,9)
+
       //+post(1)
 
       h2.name
