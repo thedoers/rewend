@@ -5,7 +5,7 @@
 //= require "passURL"
 //= require "hypher/dist/jquery.hypher"
 //= require "hyphenation-patterns/dist/browser/it"
-//= require "bxslider-4/jquery.bxslider"
+//= require "vendor/jquery.bxslider"
 //= require "partials/storytellers"
 /**
  * Created with JetBrains RubyMine.
