@@ -14,3 +14,16 @@ it:
       name: "FUSUN <br>DEMIREL"
       career: "ATTRICE,<br>TRADUTTRICE"
       data: '“Mi piace specialmente <span class="key-words">piazza Ortaköy</span>, e la zona dove finisce il Bosforo.”'
+    author2:
+      name: "METIN<br>YEĞIN"
+      career: "SCRITTORE,<br>DOCUMENTARISTA,<br>REGISTA"
+      data: '“Troverete Vefa, <span class="key-words"> il più noto venditore di Boza</span>  proprio imboccando la prima strada sul lato destro dopo aver lasciato la moschea Süleymaniye dopo tre o quattro strade.”'
+
+    author3:
+      name: "ESMAHAN<br>AYKOL"
+      career: "SCRITTRICE,<br>GIORNALISTA"
+      data: '“Suggerirei di andare nel ristorante <span class="key-words">Yakup2</span> in Tunel <span class="key-words">Beyoglu</span> perché ci va molta gente, puoi capire molto sulla vita a Istanbul.”'
+    author4:
+      name: "MEHMET<br>GÜRELI"
+      career: " ARTISTA,<br>SCRITTORE"
+      data: '“Se dovessi accompagnare un amico straniero , passeggerei con lui in Beyoglu, poi lo accompagnerei alla Moschea Blu,<span class="key-words"> &laquo; l’altra &raquo;</span> Istanbul, la città tradizionale.”'
