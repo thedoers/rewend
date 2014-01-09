@@ -32,8 +32,9 @@ end
 activate :bower
 activate :automatic_image_sizes
 activate :livereload
-activate :i18n
+activate :i18n, :mount_at_root => :en
 
+page "/it/", :layout => :html5
 page "/", :layout => :html5
 page "/404.html", :layout => :html5
 page "/sitemap.xml", :layout => false

@@ -2,6 +2,13 @@
 title: "main page"
 metas: "main"
 ---
+:javascript
+  var locale = new Object();
+  locale.coauthors = new Object();
+  locale.coauthors.author1 = new Object();
+  locale.coauthors.author1.name = "#{t("coauthors.author1.name")}";
+  locale.coauthors.author1.career = "#{t("coauthors.author1.career")}";
+  locale.coauthors.author1.data = '#{t("coauthors.author1.data")}';
 
 = partial'partials/header'
 

@@ -1,0 +1,16 @@
+---
+en:
+  messages: '"Because that is our ambition: to <span class="key-words">get you out</span> from the obliged routes, certainly beautiful. We would like to push you to discover the city letting yourself been guided by intuition, smells, sounds."'
+  author1:
+    name: "MAURO GUGLIELMINOTTI"
+    career: "PHOTOJOURNALIST"
+    bio: "Italian photojournalist born in Turin, lives and works in Paris, France. He has published in Italian and foreign newspapers and magazines, he has exhibited in art galleries in Italy and France, and has published several books. He is mainly devoted to the social and travel photography."
+  author2:
+    name: "ORSOLA CASAGRANDE"
+    career: "JOURNALIST"
+    bio: "Born in Venice, journalist, activist, she has been for twenty years journalist at the Italian newspaper il Manifesto. She has written three books and several documenta- ries cosigned with Bibi Bozzato. She has lived and continues to live (in) many cities, Belfast, London, Istanbul, Bilbao, Havana, Diyarbakir, Turin. At this time she is located in Barcelona."
+  coauthors:
+    author1:
+      name: "FUSUN <br>DEMIREL"
+      career: "TURKISH ACTRESS, <br>TRANSLATOR"
+      data: '“I especially like <span class="key-words">Ortaköy square</span>, and the area where the Bosphorus ends.”'
