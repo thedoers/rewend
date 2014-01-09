@@ -2,11 +2,11 @@
 it:
   messages: '"Proprio questa è la nostra ambizione: <span class="key-words">farvi uscire</span> dai circuiti - pur belli - obbligati. Pungolarvi a scoprire la città lasciandovi guidare dall’intuito, dagli odori, dai suoni."'
   author1:
-    name: "MAURO GUGLIELMINOTTI"
+    name: "MAURO<br>GUGLIELMINOTTI"
     career: "FOTOGIORNALISTA"
     bio: "Fotogiornalista italiano nato a Torino, vive e lavora a Parigi, in Francia Ha pubblicato su numerosi quotidiani e riviste italiane e straniere, ha esposto in gallerie d’arte in Italia e in Francia e ha pubblicato alcuni libri . Si occupa prevalentemente di fotografia sociale e di viaggio."
   author2:
-    name: "ORSOLA CASAGRANDE"
+    name: "ORSOLA<br>CASAGRANDE"
     career: "GIORNALISTA"
     bio: "Nata a Venezia, giornalista militante, è stata per vent’anni redattrice del manifesto. Ha scritto tre libri e firmato come autrice vari documentari insieme a Bibi Bozzato. Ha vis- suto e continua a vivere (in) molte città: Belfast, Londra, Istanbul, Bilbao, La Havana, Diyarbakir, Torino. In questo momento si trova a Barcellona."
   coauthors:

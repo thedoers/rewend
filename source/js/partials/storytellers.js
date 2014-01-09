@@ -36,5 +36,5 @@ $("#storyteller4").hover(function(){
     $("h2.name_story_teller3").css("display","none");
     $("h2.name_story_teller4").css("display","block");
     $(".paragraph-story_teller h3.career").text(locale.coauthors.author4.career);
-    $(".paragraph-story_teller p.data").html(locale.coauthors.author3.data);
+    $(".paragraph-story_teller p.data").html(locale.coauthors.author4.data);
 });

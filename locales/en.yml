@@ -2,11 +2,11 @@
 en:
   messages: '"Because that is our ambition: to <span class="key-words">get you out</span> from the obliged routes, certainly beautiful. We would like to push you to discover the city letting yourself been guided by intuition, smells, sounds."'
   author1:
-    name: "MAURO GUGLIELMINOTTI"
+    name: "MAURO<br>GUGLIELMINOTTI"
     career: "PHOTOJOURNALIST"
     bio: "Italian photojournalist born in Turin, lives and works in Paris, France. He has published in Italian and foreign newspapers and magazines, he has exhibited in art galleries in Italy and France, and has published several books. He is mainly devoted to the social and travel photography."
   author2:
-    name: "ORSOLA CASAGRANDE"
+    name: "ORSOLA<br> CASAGRANDE"
     career: "JOURNALIST"
     bio: "Born in Venice, journalist, activist, she has been for twenty years journalist at the Italian newspaper il Manifesto. She has written three books and several documenta- ries cosigned with Bibi Bozzato. She has lived and continues to live (in) many cities, Belfast, London, Istanbul, Bilbao, Havana, Diyarbakir, Turin. At this time she is located in Barcelona."
   coauthors:
@@ -14,3 +14,16 @@ en:
       name: "FUSUN <br>DEMIREL"
       career: "TURKISH ACTRESS, <br>TRANSLATOR"
       data: '“I especially like <span class="key-words">Ortaköy square</span>, and the area where the Bosphorus ends.”'
+    author2:
+      name: "METIN<br>YEĞIN"
+      career: "WRITER,<br>DOCUMENTARY FILMMAKER,<br>DIRECTOR"
+      data: '“You will find, <span class="key-words"> the popular Vefa Boza seller</span> when you turn the first street on the right side after leaving the Süleymaniye mosque. Following the side streets there, you will find the place after 3-4 streets.”'
+
+    author3:
+      name: "ESMAHAN<br>AYKOL"
+      career: "TURKISH WRITER,<br>JOURNALIST"
+      data: '“I would suggest going to <span class="key-words">Yakup2</span> restaurant in Tunel <span class="key-words">Beyoğlu</span> because a lot of people go there, it’s a place where you get a feel for life in Istanbul.”'
+    author4:
+      name: "MEHMET<br>GÜRELI"
+      career: "TURKISH ARTIST,<br>WRITER"
+      data: '“If I were to take around Istanbul a foreign friend I would walk in Beyoğlu, I also would take him/her to the Blue Mosque and I would visit <span class="key-words">the old traditional city</span>.”'
