@@ -1,6 +1,7 @@
 ---
 en:
-  messages: '"Because that is our ambition: to <span class="key-words">get you out</span> from the obliged routes, certainly beautiful. We would like to push you to discover the city letting yourself been guided by intuition, smells, sounds."'
+  author_messages: '"Because that is our ambition: to <span class="key-words">get you out</span> from the obliged routes, certainly beautiful. We would like to push you to discover the city letting yourself been guided by intuition, smells, sounds."'
+  sell_buttons: "I WANT IT!"
   author1:
     name: "MAURO<br>GUGLIELMINOTTI"
     career: "PHOTOJOURNALIST"
@@ -12,18 +13,22 @@ en:
   coauthors:
     author1:
       name: "FUSUN <br>DEMIREL"
-      career: "TURKISH ACTRESS, <br>TRANSLATOR"
+      career: "TURKISH ACTRESS & TRANSLATOR"
       data: '“I especially like <span class="key-words">Ortaköy square</span>, and the area where the Bosphorus ends.”'
     author2:
       name: "METIN<br>YEĞIN"
-      career: "WRITER,<br>DOCUMENTARY FILMMAKER,<br>DIRECTOR"
+      career: "WRITER, DOCUMENTARY FILMMAKER & DIRECTOR"
       data: '“You will find, <span class="key-words"> the popular Vefa Boza seller</span> when you turn the first street on the right side after leaving the Süleymaniye mosque. Following the side streets there, you will find the place after 3-4 streets.”'
 
     author3:
       name: "ESMAHAN<br>AYKOL"
-      career: "TURKISH WRITER,<br>JOURNALIST"
+      career: "TURKISH WRITER & JOURNALIST"
       data: '“I would suggest going to <span class="key-words">Yakup2</span> restaurant in Tunel <span class="key-words">Beyoğlu</span> because a lot of people go there, it’s a place where you get a feel for life in Istanbul.”'
     author4:
       name: "MEHMET<br>GÜRELI"
-      career: "TURKISH ARTIST,<br>WRITER"
+      career: "TURKISH ARTIST & WRITER"
       data: '“If I were to take around Istanbul a foreign friend I would walk in Beyoğlu, I also would take him/her to the Blue Mosque and I would visit <span class="key-words">the old traditional city</span>.”'
+  sell-share_messages: '“This book is a bit our <span class="key-words">declaration of love</span> to the places that have welcomed and continue to welcome us”.'
+  form_messages: '<span class= "key-words">Rewend </span> means  nomad in kurdish: It is with nomadic spirit and sharp look that this initiative is born. Tell, in a series of books on paper and digital, unconventional cities and territories, suggesting paths, looks, tastes. To put in a backpack, to look at before you leave.'
+  form_button: "SUBSCRIBE!"
+  footer_messages: 'If you are interested in buying photos, please contact: <strong><a href="mailto:mauro.guglielminotti@gmail.com">mauro.guglielminotti@gmail.com</a></strong>'

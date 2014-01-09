@@ -1,6 +1,7 @@
 ---
 it:
-  messages: '"Proprio questa è la nostra ambizione: <span class="key-words">farvi uscire</span> dai circuiti - pur belli - obbligati. Pungolarvi a scoprire la città lasciandovi guidare dall’intuito, dagli odori, dai suoni."'
+  author_messages: '"Proprio questa è la nostra ambizione: <span class="key-words">farvi uscire</span> dai circuiti - pur belli - obbligati. Pungolarvi a scoprire la città lasciandovi guidare dall’intuito, dagli odori, dai suoni."'
+  sell_buttons: "LO VOGLIO!"
   author1:
     name: "MAURO<br>GUGLIELMINOTTI"
     career: "FOTOGIORNALISTA"
@@ -12,18 +13,22 @@ it:
   coauthors:
     author1:
       name: "FUSUN <br>DEMIREL"
-      career: "ATTRICE,<br>TRADUTTRICE"
+      career: "ATTRICE E TRADUTTRICE"
       data: '“Mi piace specialmente <span class="key-words">piazza Ortaköy</span>, e la zona dove finisce il Bosforo.”'
     author2:
       name: "METIN<br>YEĞIN"
-      career: "SCRITTORE,<br>DOCUMENTARISTA,<br>REGISTA"
+      career: "SCRITTORE, DOCUMENTARISTA E REGISTA"
       data: '“Troverete Vefa, <span class="key-words"> il più noto venditore di Boza</span>  proprio imboccando la prima strada sul lato destro dopo aver lasciato la moschea Süleymaniye dopo tre o quattro strade.”'
-
     author3:
       name: "ESMAHAN<br>AYKOL"
-      career: "SCRITTRICE,<br>GIORNALISTA"
+      career: "SCRITTRICE E GIORNALISTA"
       data: '“Suggerirei di andare nel ristorante <span class="key-words">Yakup2</span> in Tunel <span class="key-words">Beyoglu</span> perché ci va molta gente, puoi capire molto sulla vita a Istanbul.”'
     author4:
       name: "MEHMET<br>GÜRELI"
-      career: " ARTISTA,<br>SCRITTORE"
+      career: " ARTISTA E SCRITTORE"
       data: '“Se dovessi accompagnare un amico straniero , passeggerei con lui in Beyoglu, poi lo accompagnerei alla Moschea Blu,<span class="key-words"> &laquo; l’altra &raquo;</span> Istanbul, la città tradizionale.”'
+
+  sell-share_messages: '“Questo libro è un po’ la nostra <span class="key-words">dichiarazione d’amore</span> a luoghi che ci hanno accolto e continuano ad accoglierci.”'
+  form_messages: '<span class= "key-words">Rewend </span> significa nomade in curdo: è con spirito nomade e sguardo attento che nasce questa nostra iniziativa. Racconteremo, in una collana di libri cartacei e digitali, città e territori non ovvi, suggerendo percorsi, sguardi, assaggi. Da mettere nello zaino, da guardare prima di partire.'
+  form_button: "ISCRIVITI!"
+  footer_messages: 'Se siete interessati all’acquisto delle foto potete contattare: <strong><a href="mailto:mauro.guglielminotti@gmail.com">mauro.guglielminotti@gmail.com</a></strong>'

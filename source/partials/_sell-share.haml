@@ -5,17 +5,13 @@
     //valori di prova per immagine desktop-buyplus:  w280 h105, w205 h90
 
     %a{href:"", id: "buy3"}
-      LO VOGLIO!
+      = t("sell_buttons")
     %a{ href:"", id: "buy4"}
-      LO VOGLIO!
+      = t("sell_buttons")
 
   .container-right
     %p.hyphenate
-      “Questo libro è un po’ la nostra
-      <span class="key-words">dichiarazione d’amore</span> a luoghi
-      che ci hanno accolto
-      e continuano ad
-      accoglierci.”
+      = t("sell-share_messages")
 
     =partial "partials/share_tag", :locals => {:url => "",:twitter_url=>"", :twitter_title => "", :title => ""}
 
