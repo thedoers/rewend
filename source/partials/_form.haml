@@ -4,8 +4,8 @@
   - form_tag 'http://mailinglist.thedoersproject.com/subscribe', :id => "signup-form-rw", :name => "signup-form", :"accept-charset" => "utf-8", :class => 'submit-form', :method => 'POST' do
     - field_set_tag do
       %p
-        = text_field_tag :name, :name => "name", :id => 'name', :class=>"name", :placeholder=>"Il tuo nome", :type=>"text"
-        = text_field_tag :email, :name => "email", :id => 'email', :class=>"email", :placeholder=>"La tua email", :type=>"text"
+        = text_field_tag :name, :name => "name", :id => 'name', :class=>"name", :placeholder=> t('form_textbox_name'), :type=>"text"
+        = text_field_tag :email, :name => "email", :id => 'email', :class=>"email", :placeholder=> t('form_textbox_email'), :type=>"text"
       - if development?
         = hidden_field_tag  :list, :value => "y1C1K1lnUXrSwv2cqfKljw", :name => "list", :id => 'submit_list'
       - if build?

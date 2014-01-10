@@ -31,4 +31,6 @@ en:
   sell-share_messages: '“This book is a bit our <span class="key-words">declaration of love</span> to the places that have welcomed and continue to welcome us”.'
   form_messages: '<span class= "key-words">Rewend </span> means  nomad in kurdish: It is with nomadic spirit and sharp look that this initiative is born. Tell, in a series of books on paper and digital, unconventional cities and territories, suggesting paths, looks, tastes. To put in a backpack, to look at before you leave.'
   form_button: "SUBSCRIBE!"
+  form_textbox_name: "Your name"
+  form_textbox_email: "Your email"
   footer_messages: 'If you are interested in buying photos, please contact: <strong><a href="mailto:mauro.guglielminotti@gmail.com">mauro.guglielminotti@gmail.com</a></strong>'
