@@ -8,7 +8,7 @@
     <COMMAND_RUN_CONFIGURATION NAME="myPassParentEnvs" VALUE="true" />
     <envs />
     <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-    <EXTENSION ID="JRubyRunConfigurationExtension" />
+    <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
     <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
       <COVERAGE_PATTERN ENABLED="true">
         <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
@@ -19,6 +19,8 @@
     <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_NAME" VALUE="foreman" />
     <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_ARGS" VALUE="run -e environments/production.env middleman build" />
     <COMMAND_CONFIG_SETTINGS_ID NAME="WORKING_DIR" VALUE="run -e environments/production.env middleman build" />
+    <RunnerSettings RunnerId="RubyRunner" />
+    <ConfigurationWrapper RunnerId="RubyRunner" />
     <method />
   </configuration>
 </component>

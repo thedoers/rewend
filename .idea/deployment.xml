@@ -2,7 +2,14 @@
 <project version="4">
   <component name="PublishConfigData" promptOnRemoteOverwrite="CHECK_TIMESTAMP" exclude=".svn;.cvs;.idea;.DS_Store;.git;.hg;.env;Procfile;">
     <serverData>
-      <paths name="Staging">
+      <paths name="Doers Staging">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$/build" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Rewend Production">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$/build" web="/" />
