@@ -71,6 +71,8 @@
       <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_NAME" VALUE="foreman" />
       <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_ARGS" VALUE="run -e environments/production.env middleman build" />
       <COMMAND_CONFIG_SETTINGS_ID NAME="WORKING_DIR" VALUE="run -e environments/production.env middleman build" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
     <configuration default="false" name="Production Console" type="CommandRunConfigurationType" factoryName="Gem Command" singleton="true">
