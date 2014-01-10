@@ -10,24 +10,7 @@ activate :deploy do |deploy|
   deploy.build_before = true
 end
 
-activate :s3_sync do |s3_sync|
-  s3_sync.bucket                     = 's3.rewend.co' # The name of the S3 bucket you are targetting. This is globally unique.
-  s3_sync.region                     = 'eu-west-1'     # The AWS region for your bucket.
-  s3_sync.delete                     = true # We delete stray files by default.
-  s3_sync.after_build                = false # We chain after the build step by default. This may not be your desired behavior...
-  s3_sync.prefer_gzip                = true
-  s3_sync.path_style                 = true
-  s3_sync.reduced_redundancy_storage = false
-  s3_sync.acl                        = 'public-read'
-  s3_sync.encryption                 = false
-end
 
-activate :cloudfront do |cf|
-  cf.access_key_id = "AKIAIA2PSSK7HQN2O33A"
-  cf.secret_access_key = "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"
-  cf.distribution_id = ''
-  cf.after_build = false
-end
 
 activate :bower
 activate :automatic_image_sizes
