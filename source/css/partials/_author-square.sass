@@ -1,5 +1,5 @@
 .author-square
-  +span-columns(10,10)
+  +span-columns(7,7)
   .container_mobile
     display: block
   .container_desktop
@@ -18,7 +18,7 @@
 
   .bx-controls
     .bx-pager-bar
-      +span-columns(10,10)
+      +span-columns(7,7)
       height: 28px
       background: $blue
       position: absolute
@@ -26,11 +26,11 @@
       z-index: -1
 
   .container_mobile
-    +span-columns(10,10)
+    +span-columns(7,7)
     margin: 10px 0 0 0
 
     .container-left
-      +span-columns(4,10)
+      +span-columns(4,7)
       //+pre(1)
       margin: 0
       h3.career
@@ -44,7 +44,7 @@
 
 
     .container-right
-      +span-columns(4 omega,10)
+      +span-columns(3,7)
       //+post(1)
 
       h2.name
@@ -72,6 +72,75 @@
 +at-breakpoint($screen2 $break2)
   .author-square
     +span-columns(12 ,12)
+    .container_mobile
+      display: block
+    .container_desktop
+      display: none
+
+    .bx-prev
+      display: none!important
+    .bx-next
+      display: none!important
+    .bx-viewport
+      height: auto!important
+
+    .bx-wrapper img
+      max-width: none!important
+
+
+    .bx-controls
+      .bx-pager-bar
+        +span-columns(12,12)
+        height: 28px
+        background: $blue
+        position: absolute
+        bottom: -25px
+        z-index: -1
+
+    .container_mobile
+      +span-columns(12,12)
+      margin: 10px 0 0 0
+
+      .container-left
+        +span-columns(5,12)
+        margin: 0
+        +pre(1)
+        h3.career
+          margin: 22px 0 0 0
+          @extend .geogrotesque
+          font-size: px-to-em(15px,16px)
+          font-weight: 700
+          font-style: normal
+          color: $orange
+          line-height: 1em
+
+
+      .container-right
+        +span-columns(4,12)
+        +pre(1)
+
+        h2.name
+          margin: 0
+          @extend .geogrotesque
+          font-size: px-to-em(26px,16px)
+          font-weight: 700
+          font-style: normal
+          color: $blue
+          line-height: 1em
+
+        p.data
+          margin: 0
+          @extend .decimanova
+          font-size: px-to-em(14px,16px)
+          font-weight: 700
+          font-style: italic
+          color: $blue
+          line-height: 1.2em
+
+        span.key-words
+          color: $dark-blue
+
+
 
 
 

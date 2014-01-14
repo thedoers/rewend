@@ -67,7 +67,7 @@
 	font-family: Arial;
 	font-weight: bold;
 	color: #666;
-	padding-top: 20px;
+	/*padding-top: 20px;*/
 }
 
 .bx-wrapper .bx-pager .bx-pager-item,
@@ -83,7 +83,7 @@
 	display: block;
 	width: 10px;
 	height: 10px;
-	margin: 0 5px;
+	margin: 9px 5px;
 	outline: 0;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;

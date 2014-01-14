@@ -24,7 +24,9 @@
         <a href="/it/index.html">ITA</a> | <a href="/">ENG</a>
     .share_menu
       .heart-share
-        <a href= "javascript://nop" id= "share-link"  onclick= "sharemenu(this)"><img src="/images/rewend_menu-heart-share.png" id="rewend_menu-heart-share" alt="Rewend HeartShare" width="93"><p class= "text">SHARE</p></a>
-
+        -#<a href= "javascript://nop" id= "share-link"  onclick= "sharemenu(this)"><img src="/images/rewend_menu-heart-share.png" id="rewend_menu-heart-share" alt="Rewend HeartShare" width="93"><p class= "text">SHARE</p></a>
+        %a#share-link{href: "javascript://nop", onclick: "sharemenu(this)"}
+          %img#rewend_menu-heart-share{alt: "Rewend HeartShare", src: "/images/rewend_menu-heart-share.png", width: "93"}
+          %p.text SHARE
       = partial "partials/share_tag", :locals => {:url => "#{t("url")}",:twitter_url=>"#{t("url")}?utm_source=Social&utm_medium=Twitter&utm_content=tweet&utm_campaign=Socials", :twitter_title => "Rewend", :title => "#{t("author_messages")}"}
 

@@ -1,5 +1,5 @@
 .sell-share
-  +span-columns(10,10)
+  +span-columns(7,7)
   position: relative
   border: 10px solid $blue
   margin: 11px 0 0 0
@@ -7,13 +7,15 @@
   +box-sizing(border-box)
 
   .container-left
-    +span-columns(6 ,10)
+    +span-columns(4 ,7)
     //+post(1)
     position: relative
 
-    #mobile-devicesplus
+    #share_mobile-devicesplus
       display: block
-    #desktop-devicesplus
+    #share_ipad-devicesplus
+      display: none
+    #share_desktop-devicesplus
       display: none
 
 
@@ -61,7 +63,7 @@
       color: $white
 
   .container-right
-    +span-columns(4 omega ,10)
+    +span-columns(3 omega ,7)
     p
       margin: 0
       @extend .decimanova
@@ -97,8 +99,7 @@
 
 
 
-//640px vertical layout
-//960px horizontal layout
+
 //desktop
 +at-breakpoint($screen3 $break3)
   .sell-share
@@ -115,9 +116,11 @@
       //+post(1)
       position: relative
 
-      #mobile-devicesplus
+      #share_mobile-devicesplus
         display: none
-      #desktop-devicesplus
+      #share_ipad-devicesplus
+        display: none
+      #share_desktop-devicesplus
         display: block
 
       //.buttons
