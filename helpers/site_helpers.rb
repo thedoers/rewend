@@ -26,7 +26,7 @@ module SiteHelpers
   def page_metas
     metas = ""
     if data.page.metas
-     metas = partial("metas/"+data.page.metas)
+     metas = partial("/metas/"+data.page.metas)
     end
     metas
   end
