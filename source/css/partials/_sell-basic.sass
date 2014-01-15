@@ -66,6 +66,7 @@
         +box-sizing(border-box)
 
     #buy1, #buy2
+      width: auto
       margin: 0 0 0 5px
       padding: 2.5px 6px
       display: inline-block
@@ -85,8 +86,9 @@
     +box-sizing(border-box)
 
     .container-left
-      +span-columns(4,12)
+      +span-columns(3,12)
       +pre(1)
+      padding: 15px 0 0
 
       #mobile-devices
         display: none
@@ -96,8 +98,8 @@
         display: none
 
     .container-right
-      +span-columns(6 omega,12)
-      +post(1)
+      +span-columns(6,12)
+      +pre(1)
       position: relative
 
       #mobile-devicesplus
@@ -110,7 +112,8 @@
 
       #buy1
         position: absolute
-        left: 5px
+        //left: 5px
+        left: 3%
         bottom: -33px
         text-decoration: none
         background: $dark-blue
@@ -123,11 +126,12 @@
           background: $dark-blue
           border: $orange 2px solid
           +box-shadow(none)
-          +box-sizing(border-box)
+          +box-sizing(content-box)
 
       #buy2
         position: absolute
-        left: 80px
+        //left: 80px
+        left: 53%
         bottom: -33px
         text-decoration: none
         background: $dark-blue
@@ -136,13 +140,16 @@
           background: $blue
           +box-shadow($dark-blue 2px 2px 2px)
         &:active
+          width: 33%
           padding: 0.5px 4px
           background: $dark-blue
           border: $orange 2px solid
           +box-shadow(none)
-          +box-sizing(border-box)
+          +box-sizing(content-box)
 
       #buy1, #buy2
+        width: 33%
+        text-align: center
         margin: 0 0 0 5px
         padding: 2.5px 6px
         display: inline-block
@@ -165,6 +172,7 @@
     .container-left
       +span-columns(6,16)
       +pre(1)
+      padding: 0
 
       #mobile-devices
         display: none
@@ -175,7 +183,7 @@
 
     .container-right
       +span-columns(8 omega,16)
-      //+pre(1)
+      +pre(0)
       //+post(1)
       +suffix(1,16)
       position: relative
@@ -227,6 +235,7 @@
           +box-sizing(border-box)
 
       #buy1, #buy2
+        width: auto
         padding: 4.5px 9px
         display: inline-block
         @extend .decimanova
