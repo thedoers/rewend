@@ -7,8 +7,9 @@
   +box-sizing(border-box)
 
   .container-left
-    +span-columns(4 ,7)
-    //+post(1)
+    +span-columns(5 ,7)
+    margin: 0 0 30px
+    +pre(1)
     position: relative
 
     #share_mobile-devicesplus
@@ -20,9 +21,9 @@
 
 
     #buy3
-      position: absolute
-      left:  7px
-      bottom: -36px
+      position: relative
+      left:  8%
+      bottom: -7px
       text-decoration: none
       background: $dark-blue
       +box-shadow($orange 2px 2px 0px)
@@ -34,12 +35,12 @@
         background: $dark-blue
         border: $orange 2px solid
         +box-shadow(none)
-        +box-sizing(border-box)
+        +box-sizing(content-box)
 
     #buy4
-      position: absolute
-      left: 80px
-      bottom: -36px
+      position: relative
+      left: 21%
+      bottom: -7px
       text-decoration: none
       background: $dark-blue
       +box-shadow($orange 2px 2px 0px)
@@ -51,9 +52,10 @@
         background: $dark-blue
         border: $orange 2px solid
         +box-shadow(none)
-        +box-sizing(border-box)
+        +box-sizing(content-box)
 
     #buy3, #buy4
+      width: 28%
       padding: 2.5px 6px
       display: inline-block
       @extend .decimanova
@@ -61,9 +63,11 @@
       font-weight: 700
       font-style: italic
       color: $white
+      text-align: center
 
   .container-right
-    +span-columns(3 omega ,7)
+    +span-columns(5 ,7)
+    +pre(1)
     p
       margin: 0
       @extend .decimanova
@@ -77,8 +81,7 @@
 
     .share
       margin-top: 5px
-      //.addthis_toolbox
-      //  float: right
+      text-align: center
       a
         cursor: pointer
         border: none
@@ -95,10 +98,98 @@
 +at-breakpoint($screen2 $break2)
   .sell-share
     +span-columns(12 ,12)
+    position: relative
+    border: 10px solid $blue
+    margin: 11px 0 0 0
+    padding: 8px 0
+    +box-sizing(border-box)
+
+    .container-left
+      +span-columns(6 ,12)
+      +pre(1)
+      position: relative
+
+      #share_mobile-devicesplus
+        display: block
+      #share_ipad-devicesplus
+        display: none
+      #share_desktop-devicesplus
+        display: none
 
 
+      #buy3
+        position: absolute
+        left:  3%
+        bottom: -36px
+        text-decoration: none
+        background: $dark-blue
+        +box-shadow($orange 2px 2px 0px)
+        &:hover
+          background: $blue
+          +box-shadow($dark-blue 2px 2px 0px)
+        &:active
+          padding: 0.5px 4px
+          background: $dark-blue
+          border: $orange 2px solid
+          +box-shadow(none)
+          +box-sizing(content-box)
 
+      #buy4
+        position: absolute
+        left: 53%
+        bottom: -36px
+        text-decoration: none
+        background: $dark-blue
+        +box-shadow($orange 2px 2px 0px)
+        &:hover
+          background: $blue
+          +box-shadow($dark-blue 2px 2px 0px)
+        &:active
+          padding: 0.5px 4px
+          background: $dark-blue
+          border: $orange 2px solid
+          +box-shadow(none)
+          +box-sizing(content-box)
 
+      #buy3, #buy4
+        width: 33%
+        padding: 2.5px 6px
+        display: inline-block
+        @extend .decimanova
+        font-size: px-to-em(11.26px,16px)
+        font-weight: 700
+        font-style: italic
+        color: $white
+
+    .container-right
+      +span-columns(3,12)
+      +pre(1)
+      p
+        margin: 0
+        @extend .decimanova
+        font-size: px-to-em(14px,16px)
+        font-weight: 700
+        font-style: italic
+        color: $blue
+        line-height: 1.2em
+        .key-words
+          color: $dark-blue
+
+      .share
+        margin-top: 5px
+        //.addthis_toolbox
+        //  float: right
+        a
+          cursor: pointer
+          border: none
+          text-decoration: none
+          width: 34px
+          height: 34px
+          display: inline-block
+          text-align: center
+          font-size: px-to-em(20px,16px)
+          line-height: px-to-em(22px,16px)
+          +link-colors($dark-blue, $pink, $dark-blue, $dark-blue, $dark-blue)
 
 //desktop
 +at-breakpoint($screen3 $break3)
@@ -160,6 +251,7 @@
           +box-sizing(border-box)
 
       #buy3, #buy4
+        width: auto
         //margin: 0 0 0 5px
         padding: 4.5px 9px
         display: inline-block
@@ -170,7 +262,7 @@
         color: $white
 
     .container-right
-      +span-columns(6,16)
+      +span-columns(5,16)
       //+pre(1)
       margin-top: 16px
       p
