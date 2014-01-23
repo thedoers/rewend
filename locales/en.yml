@@ -1,6 +1,7 @@
 ---
 en:
   url: "http://rewened.eu/"
+  description-meta_messages:  "This book is a bit our declaration of love to the places that have welcomed and continue to welcome us."
   author_messages: '"Because that is our ambition: to <span class="key-words">get you out</span> from the obliged routes, certainly beautiful. We would like to push you to discover the city letting yourself been guided by intuition, smells, sounds."'
   sell_buttons: "I WANT IT!"
   author1:
@@ -30,7 +31,6 @@ en:
       career: "TURKISH ARTIST & WRITER"
       data: '“If I were to take around Istanbul a foreign friend I would walk in Beyoğlu, I also would take him/her to the Blue Mosque and I would visit <span class="key-words">the old traditional city</span>.”'
   sell-share_messages: '“This book is a bit our <span class="key-words">declaration of love</span> to the places that have welcomed and continue to welcome us”.'
-  description-meta_messages:  "This book is a bit our declaration of love to the places that have welcomed and continue to welcome us."
   form_messages: '<span class= "key-words">Rewend </span> means nomad in Kurdish: it&#39;s with nomadic spirit and a sharp look that this initiative has been created. Through a series of paper and digital books, we are going to tell you about unconventional cities and places, suggesting paths, looks, tastes. To put in your backpack, to check before leaving for a journey.'
   form_button: "SUBSCRIBE!"
   form_textbox_name: "Your name"

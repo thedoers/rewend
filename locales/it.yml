@@ -1,6 +1,7 @@
 ---
 it:
   url: "http://rewened.eu/it/"
+  description-meta_messages:  "Questo libro è un po’ la nostra dichiarazione d’amore a luoghi che ci hanno accolto e continuano ad accoglierci."
   author_messages: '"Proprio questa è la nostra ambizione: <span class="key-words">farvi uscire</span> dai circuiti - pur belli - obbligati. Pungolarvi a scoprire la città lasciandovi guidare dall’intuito, dagli odori, dai suoni."'
   sell_buttons: "LO VOGLIO!"
   author1:
@@ -28,9 +29,7 @@ it:
       name: "MEHMET<br>GÜRELI"
       career: " ARTISTA E SCRITTORE"
       data: '“Se dovessi accompagnare un amico straniero , passeggerei con lui in Beyoglu, poi lo accompagnerei alla Moschea Blu,<span class="key-words"> &laquo; l’altra &raquo;</span> Istanbul, la città tradizionale.”'
-
   sell-share_messages: '“Questo libro è un po’ la nostra <span class="key-words">dichiarazione d’amore</span> a luoghi che ci hanno accolto e continuano ad accoglierci.”'
-  description-meta_messages:  "Questo libro è un po’ la nostra dichiarazione d’amore a luoghi che ci hanno accolto e continuano ad accoglierci."
   form_messages: '<span class= "key-words">Rewend </span> significa nomade in curdo: è con spirito nomade e sguardo attento che nasce questa nostra iniziativa. Racconteremo, in una collana di libri cartacei e digitali, città e territori non ovvi, suggerendo percorsi, sguardi, assaggi. Da mettere nello zaino, da guardare prima di partire.'
   form_button: "ISCRIVITI!"
   form_textbox_name: "Il tuo nome"
